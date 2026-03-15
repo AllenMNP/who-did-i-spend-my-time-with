@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react';
-import { Search, Filter, Download, Trash2, Edit2, ChevronUp, ChevronDown, Plus, X, Users } from 'lucide-react';
+import { useState, useMemo, useEffect } from 'react';
+import { Search, Filter, Download, Trash2, Edit2, ChevronUp, ChevronDown, Plus, X, Users, Image } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/Card';
 import Button from './ui/Button';
 import { Input, Label, Select, Textarea } from './ui/Input';
@@ -26,6 +26,8 @@ export function ListView({
   const [showFilters, setShowFilters] = useState(false);
   const [editingGroup, setEditingGroup] = useState(null);
   const [editForm, setEditForm] = useState({ participants: [] });
+  const [editPhotoPaths, setEditPhotoPaths] = useState({});
+  const isElectron = typeof window !== 'undefined' && window.electronAPI?.isElectron;
 
   const getFriendName = (id) => friends.find(f => f.id === id)?.name || 'Unknown';
   const getCategory = (id) => categories.find(c => c.id === id);
@@ -42,6 +44,7 @@ export function ListView({
           date: h.date,
           categoryId: h.categoryId,
           notes: h.notes,
+          photos: h.photos || [],
           participants: [],
           isGroup: !!h.groupId
         };
@@ -116,19 +119,37 @@ export function ListView({
     }
   };
 
-  const handleEditGroup = (group) => {
+  const handleEditGroup = async (group) => {
     setEditingGroup(group);
+    
+    // Get location and photos from the first hangout in the group
+    const firstHangout = hangouts.find(h => 
+      group.groupId ? h.groupId === group.groupId : h.id === group.participants[0]?.odId
+    );
+    
     setEditForm({
       date: group.date,
       categoryId: group.categoryId,
       notes: group.notes,
       groupId: group.groupId,
+      photos: firstHangout?.photos || [],
       participants: group.participants.map(p => ({
         odId: p.odId,
         friendId: p.friendId,
         hours: p.hours
       }))
     });
+
+    // Load photo paths
+    if (isElectron && firstHangout?.photos?.length > 0) {
+      const paths = {};
+      for (const filename of firstHangout.photos) {
+        paths[filename] = await window.electronAPI.getPhotoPath(filename);
+      }
+      setEditPhotoPaths(paths);
+    } else {
+      setEditPhotoPaths({});
+    }
   };
 
   const handleSaveEdit = () => {
@@ -143,7 +164,8 @@ export function ListView({
           categoryId: editForm.categoryId,
           notes: editForm.notes,
           hours: p.hours,
-          groupId: editForm.groupId
+          groupId: editForm.groupId,
+          photos: editForm.photos || []
         });
       } else {
         // New participant - add hangout
@@ -154,7 +176,8 @@ export function ListView({
           categoryId: editForm.categoryId,
           notes: editForm.notes,
           hours: p.hours,
-          groupId: editForm.groupId || generateId()
+          groupId: editForm.groupId || generateId(),
+          photos: editForm.photos || []
         });
       }
     });
@@ -209,6 +232,27 @@ export function ListView({
         p.friendId === friendId ? { ...p, hours: parseFloat(hours) || 0 } : p
       )
     });
+  };
+
+  const handleEditSelectPhotos = async () => {
+    if (!isElectron) return;
+    const result = await window.electronAPI.selectPhotos();
+    if (result.success && result.photos.length > 0) {
+      const newPhotos = [...(editForm.photos || []), ...result.photos];
+      setEditForm({ ...editForm, photos: newPhotos });
+      // Load paths for new photos
+      for (const filename of result.photos) {
+        const fullPath = await window.electronAPI.getPhotoPath(filename);
+        setEditPhotoPaths(prev => ({ ...prev, [filename]: fullPath }));
+      }
+    }
+  };
+
+  const removeEditPhoto = (filename) => {
+    setEditForm(prev => ({
+      ...prev,
+      photos: (prev.photos || []).filter(p => p !== filename)
+    }));
   };
 
   const exportToCSV = () => {
@@ -418,8 +462,17 @@ export function ListView({
                           <Badge color={category?.color}>{category?.name || 'Unknown'}</Badge>
                         </td>
                         <td className="py-3 px-2 text-sm text-gray-900 dark:text-gray-100">{g.totalHours}h</td>
-                        <td className="py-3 px-2 text-sm text-gray-500 dark:text-gray-400 hidden md:table-cell max-w-[200px] truncate">
-                          {g.notes || '-'}
+                        <td className="py-3 px-2 text-sm text-gray-500 dark:text-gray-400 hidden md:table-cell max-w-[200px]">
+                          <div className="space-y-1">
+                            {g.notes && <div className="truncate">{g.notes.split('\n')[0]}</div>}
+                            {g.photos?.length > 0 && (
+                              <div className="flex items-center gap-1 text-xs text-gray-400">
+                                <Image className="w-3 h-3" />
+                                <span>{g.photos.length} photo{g.photos.length !== 1 ? 's' : ''}</span>
+                              </div>
+                            )}
+                            {!g.notes && !g.photos?.length && '-'}
+                          </div>
                         </td>
                         <td className="py-3 px-2">
                           <div className="flex gap-1 justify-end">
@@ -485,6 +538,46 @@ export function ListView({
               placeholder="One keyword per line..."
             />
           </div>
+
+          {isElectron && (
+            <div>
+              <Label className="flex items-center gap-1">
+                <Image className="w-4 h-4" />
+                Photos
+              </Label>
+              
+              {editForm.photos?.length > 0 && (
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {editForm.photos.map(filename => (
+                    <div key={filename} className="relative group">
+                      <img
+                        src={editPhotoPaths[filename] ? `file://${editPhotoPaths[filename]}` : ''}
+                        alt=""
+                        className="w-16 h-16 object-cover rounded-lg border border-gray-200 dark:border-gray-600"
+                      />
+                      <button
+                        type="button"
+                        onClick={() => removeEditPhoto(filename)}
+                        className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full p-0.5 opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <X className="w-3 h-3" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+              
+              <Button
+                type="button"
+                variant="outline"
+                onClick={handleEditSelectPhotos}
+                className="w-full"
+              >
+                <Image className="w-4 h-4 mr-2" />
+                Add Photos
+              </Button>
+            </div>
+          )}
 
           <div>
             <Label>Participants</Label>

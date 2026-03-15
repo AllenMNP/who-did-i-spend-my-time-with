@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Plus, X } from 'lucide-react';
+import { Plus, X, Image } from 'lucide-react';
 import Button from './ui/Button';
 import { Input, Label, Select, Textarea } from './ui/Input';
 import DatePicker from './ui/DatePicker';
@@ -30,7 +30,10 @@ export function HangoutForm({
     hours: 2,
     categoryId: '',
     notes: '',
+    photos: [],
   });
+  const [photoPaths, setPhotoPaths] = useState({});
+  const isElectron = typeof window !== 'undefined' && window.electronAPI?.isElectron;
   const [customHours, setCustomHours] = useState('');
   const [useCustomHours, setUseCustomHours] = useState(false);
   const [showNewFriendModal, setShowNewFriendModal] = useState(false);
@@ -65,6 +68,7 @@ export function HangoutForm({
         notes: formData.notes,
         hours,
         groupId, // Links hangouts that happened together
+        photos: formData.photos || [],
       });
     });
 
@@ -74,7 +78,9 @@ export function HangoutForm({
       hours: 2,
       categoryId: '',
       notes: '',
+      photos: [],
     });
+    setPhotoPaths({});
     setCustomHours('');
     setUseCustomHours(false);
     
@@ -138,6 +144,27 @@ export function HangoutForm({
     setNewCategoryName('');
     setNewCategoryColor('#3B82F6');
     setShowNewCategoryModal(false);
+  };
+
+  const handleSelectPhotos = async () => {
+    if (!isElectron) return;
+    const result = await window.electronAPI.selectPhotos();
+    if (result.success && result.photos.length > 0) {
+      const newPhotos = [...formData.photos, ...result.photos];
+      setFormData({ ...formData, photos: newPhotos });
+      // Load paths for new photos
+      for (const filename of result.photos) {
+        const fullPath = await window.electronAPI.getPhotoPath(filename);
+        setPhotoPaths(prev => ({ ...prev, [filename]: fullPath }));
+      }
+    }
+  };
+
+  const removePhoto = (filename) => {
+    setFormData(prev => ({
+      ...prev,
+      photos: prev.photos.filter(p => p !== filename)
+    }));
   };
 
   return (
@@ -278,6 +305,46 @@ export function HangoutForm({
                 onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
               />
             </div>
+
+            {isElectron && (
+              <div>
+                <Label className="flex items-center gap-1">
+                  <Image className="w-4 h-4" />
+                  Photos (optional)
+                </Label>
+                
+                {formData.photos.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mb-2">
+                    {formData.photos.map(filename => (
+                      <div key={filename} className="relative group">
+                        <img
+                          src={photoPaths[filename] ? `file://${photoPaths[filename]}` : ''}
+                          alt=""
+                          className="w-16 h-16 object-cover rounded-lg border border-gray-200 dark:border-gray-600"
+                        />
+                        <button
+                          type="button"
+                          onClick={() => removePhoto(filename)}
+                          className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full p-0.5 opacity-0 group-hover:opacity-100 transition-opacity"
+                        >
+                          <X className="w-3 h-3" />
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={handleSelectPhotos}
+                  className="w-full"
+                >
+                  <Image className="w-4 h-4 mr-2" />
+                  Add Photos
+                </Button>
+              </div>
+            )}
 
             <Button type="submit" className="w-full">
               Log Hangout

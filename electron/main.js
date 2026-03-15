@@ -1,6 +1,7 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const path = require('path');
 const fs = require('fs');
+const crypto = require('crypto');
 
 const isDev = process.env.NODE_ENV === 'development' || !app.isPackaged;
 
@@ -12,6 +13,12 @@ const dataDir = isDev
 // Ensure data directory exists
 if (!fs.existsSync(dataDir)) {
   fs.mkdirSync(dataDir, { recursive: true });
+}
+
+// Photos directory
+const photosDir = path.join(dataDir, 'photos');
+if (!fs.existsSync(photosDir)) {
+  fs.mkdirSync(photosDir, { recursive: true });
 }
 
 let mainWindow;
@@ -106,6 +113,57 @@ ipcMain.handle('save-data', (event, data) => {
 
 ipcMain.handle('get-data-path', () => {
   return dataDir;
+});
+
+// Select and copy photos to app's photos directory
+ipcMain.handle('select-photos', async () => {
+  const result = await dialog.showOpenDialog(mainWindow, {
+    properties: ['openFile', 'multiSelections'],
+    filters: [
+      { name: 'Images', extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp', 'bmp'] }
+    ]
+  });
+
+  if (result.canceled || result.filePaths.length === 0) {
+    return { success: true, photos: [] };
+  }
+
+  const copiedPhotos = [];
+  
+  for (const sourcePath of result.filePaths) {
+    try {
+      const ext = path.extname(sourcePath);
+      const hash = crypto.randomBytes(8).toString('hex');
+      const filename = `${Date.now()}-${hash}${ext}`;
+      const destPath = path.join(photosDir, filename);
+      
+      fs.copyFileSync(sourcePath, destPath);
+      copiedPhotos.push(filename);
+    } catch (err) {
+      console.error('Error copying photo:', err);
+    }
+  }
+
+  return { success: true, photos: copiedPhotos };
+});
+
+// Get full path for a photo filename
+ipcMain.handle('get-photo-path', (event, filename) => {
+  return path.join(photosDir, filename);
+});
+
+// Delete a photo file
+ipcMain.handle('delete-photo', (event, filename) => {
+  try {
+    const filepath = path.join(photosDir, filename);
+    if (fs.existsSync(filepath)) {
+      fs.unlinkSync(filepath);
+    }
+    return { success: true };
+  } catch (err) {
+    console.error('Error deleting photo:', err);
+    return { success: false, error: err.message };
+  }
 });
 
 app.whenReady().then(createWindow);
