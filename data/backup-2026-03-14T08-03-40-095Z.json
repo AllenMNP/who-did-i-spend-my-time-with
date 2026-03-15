@@ -1,0 +1,593 @@
+{
+  "hangouts": [
+    {
+      "id": "58a17dea-0361-4c5b-8246-64fc4a20415b",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-02-25",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Riftbound",
+      "hours": 2,
+      "groupId": "0604c8e4-adef-4df2-9370-847f93e833dc"
+    },
+    {
+      "id": "1551286b-2072-4cd8-b1d4-cdf0e4bf16d7",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-02-25",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Riftbound",
+      "hours": 2,
+      "groupId": "0604c8e4-adef-4df2-9370-847f93e833dc"
+    },
+    {
+      "id": "3f8e88d2-db58-4afc-b6ef-e9f206e168b9",
+      "friendId": "0fe53116-eb89-487e-8925-049596b594d3",
+      "date": "2026-02-25",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Riftbound",
+      "hours": 2,
+      "groupId": "0604c8e4-adef-4df2-9370-847f93e833dc"
+    },
+    {
+      "id": "6c3e1c59-70b7-49b0-b86e-351c0d491e13",
+      "friendId": "36b0f488-b79e-477a-8796-ddf268d90328",
+      "date": "2026-02-25",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Riftbound",
+      "hours": 1,
+      "groupId": "0604c8e4-adef-4df2-9370-847f93e833dc"
+    },
+    {
+      "id": "d85192cf-7b06-4cca-93eb-ff5c0341f43c",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-03-02",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Riftbound",
+      "hours": 2.5,
+      "groupId": "e9a8a1f0-1bc0-4f0d-be16-4e82c8cac253"
+    },
+    {
+      "id": "8aca65ab-8023-4afe-9cae-5cfd3501e9cc",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-03-02",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Riftbound",
+      "hours": 2.5,
+      "groupId": "e9a8a1f0-1bc0-4f0d-be16-4e82c8cac253"
+    },
+    {
+      "id": "afc5adf2-465f-43e4-b68f-cf85751023c5",
+      "friendId": "0fe53116-eb89-487e-8925-049596b594d3",
+      "date": "2026-03-02",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Riftbound",
+      "hours": 2.5,
+      "groupId": "e9a8a1f0-1bc0-4f0d-be16-4e82c8cac253"
+    },
+    {
+      "id": "82459d5b-5ec2-4266-8466-7de5a4b63ef5",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-03-10",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "b79a3d17-8dce-4b1f-8112-335b6baa1b2e"
+    },
+    {
+      "id": "8f745729-9b94-4150-93ed-a7f8d5ef021d",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-03-10",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "b79a3d17-8dce-4b1f-8112-335b6baa1b2e"
+    },
+    {
+      "id": "f4b9b716-f83b-409b-9da1-14dc0345d859",
+      "friendId": "0fe53116-eb89-487e-8925-049596b594d3",
+      "date": "2026-03-10",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "b79a3d17-8dce-4b1f-8112-335b6baa1b2e"
+    },
+    {
+      "id": "e9d7553c-9933-4667-9378-791fc4d10e85",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-03-06",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Apartment Hangout",
+      "hours": 1,
+      "groupId": null
+    },
+    {
+      "id": "584a7726-1ffc-47d1-8150-11c71224cd44",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-03-07",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day\nFinal Fantasy",
+      "hours": 5,
+      "groupId": "c5a0b3de-40ac-496a-870d-c7651eed27e2"
+    },
+    {
+      "id": "c75b9ab5-2e39-4399-8799-d9e41e0e5057",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-03-07",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day\nFinal Fantasy",
+      "hours": 7,
+      "groupId": "c5a0b3de-40ac-496a-870d-c7651eed27e2"
+    },
+    {
+      "id": "3df216be-6b7c-4aab-8235-ab59878631e2",
+      "friendId": "e9822997-bd0c-4415-816f-3cf0be9d0226",
+      "date": "2026-03-05",
+      "categoryId": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "notes": "TWS Countdown \nPractice",
+      "hours": 2,
+      "groupId": "dae14798-6717-4ae0-b17e-da8f9b2dcb13"
+    },
+    {
+      "id": "e6ab7af5-2374-4339-b808-aecb6b958ea1",
+      "friendId": "442599c5-75e1-4167-a233-0f00527588d1",
+      "date": "2026-03-05",
+      "categoryId": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "notes": "TWS Countdown \nPractice",
+      "hours": 2,
+      "groupId": "dae14798-6717-4ae0-b17e-da8f9b2dcb13"
+    },
+    {
+      "id": "51fe2244-458e-497b-9320-6a6a2221cfd0",
+      "friendId": "71d9846f-3a1e-4c0c-8a6f-16719a97081b",
+      "date": "2026-03-05",
+      "categoryId": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "notes": "TWS Countdown \nPractice",
+      "hours": 2,
+      "groupId": "dae14798-6717-4ae0-b17e-da8f9b2dcb13"
+    },
+    {
+      "id": "72f2e553-927e-4347-97c2-d3440cf1ed53",
+      "friendId": "268a6e4c-ade3-4191-8f5d-537a0954fd1d",
+      "date": "2026-03-05",
+      "categoryId": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "notes": "TWS Countdown \nPractice",
+      "hours": 2,
+      "groupId": "dae14798-6717-4ae0-b17e-da8f9b2dcb13"
+    },
+    {
+      "id": "57a2cc28-3cfe-47f0-beaa-5af1a0f28ea6",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-03-05",
+      "categoryId": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "notes": "TWS Countdown \nPractice",
+      "hours": 2,
+      "groupId": "dae14798-6717-4ae0-b17e-da8f9b2dcb13"
+    },
+    {
+      "id": "f4c9ae32-c4ed-44da-8ba0-0a86de88f469",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-03-09",
+      "categoryId": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "notes": "TWS Countdown\nFilming",
+      "hours": 3,
+      "groupId": "bc3ba08d-2436-45a7-a785-ed75cd0159c8"
+    },
+    {
+      "id": "0dd658c4-1900-46ad-921e-77b5143262d6",
+      "friendId": "e9822997-bd0c-4415-816f-3cf0be9d0226",
+      "date": "2026-03-09",
+      "categoryId": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "notes": "TWS Countdown\nFilming",
+      "hours": 3,
+      "groupId": "bc3ba08d-2436-45a7-a785-ed75cd0159c8"
+    },
+    {
+      "id": "3f76a0ea-5e8c-47b9-9f08-1bda97c061a9",
+      "friendId": "442599c5-75e1-4167-a233-0f00527588d1",
+      "date": "2026-03-09",
+      "categoryId": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "notes": "TWS Countdown\nFilming",
+      "hours": 3,
+      "groupId": "bc3ba08d-2436-45a7-a785-ed75cd0159c8"
+    },
+    {
+      "id": "48fe5126-0d05-489c-8644-49c7c7e99f36",
+      "friendId": "268a6e4c-ade3-4191-8f5d-537a0954fd1d",
+      "date": "2026-03-09",
+      "categoryId": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "notes": "TWS Countdown\nFilming",
+      "hours": 3,
+      "groupId": "bc3ba08d-2436-45a7-a785-ed75cd0159c8"
+    },
+    {
+      "id": "1f72cd9c-02ca-4737-9521-bd39a65b3879",
+      "friendId": "71d9846f-3a1e-4c0c-8a6f-16719a97081b",
+      "date": "2026-03-09",
+      "categoryId": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "notes": "TWS Countdown\nFilming",
+      "hours": 2,
+      "groupId": "bc3ba08d-2436-45a7-a785-ed75cd0159c8"
+    },
+    {
+      "id": "cc1cfb34-9cef-4c88-8cb2-ca14fc27d2af",
+      "friendId": "442599c5-75e1-4167-a233-0f00527588d1",
+      "date": "2026-03-09",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Project CCG Post Filming\nGudnak\nRiftbound",
+      "hours": 3,
+      "groupId": "7f58f60d-b389-4d2f-87c1-0c7226be18d3"
+    },
+    {
+      "id": "45e8dceb-8028-4f8b-868b-f11336fcb0eb",
+      "friendId": "e9822997-bd0c-4415-816f-3cf0be9d0226",
+      "date": "2026-03-09",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Project CCG Post Filming\nGudnak\nRiftbound",
+      "hours": 3,
+      "groupId": "7f58f60d-b389-4d2f-87c1-0c7226be18d3"
+    },
+    {
+      "id": "60b1fd2e-8f5d-4dfe-8235-15137d3c6034",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-03-05",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Taiwan Planning",
+      "hours": 2,
+      "groupId": "bdce76f8-2b78-4a16-947e-3afdf309161f"
+    },
+    {
+      "id": "55bc1f0d-854d-4139-942b-a9e71258a331",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-03-05",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Taiwan Planning",
+      "hours": 2,
+      "groupId": "bdce76f8-2b78-4a16-947e-3afdf309161f"
+    },
+    {
+      "id": "6ca4d2e4-0c7b-4801-b442-2da67eb4dedd",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-03-05",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Taiwan Planning",
+      "hours": 2,
+      "groupId": "bdce76f8-2b78-4a16-947e-3afdf309161f"
+    },
+    {
+      "id": "3d488b7d-a45a-4975-92d8-66fffbc666a9",
+      "friendId": "4cc4ed71-f949-4672-9343-72d01290597c",
+      "date": "2026-03-05",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Taiwan Planning",
+      "hours": 2,
+      "groupId": "bdce76f8-2b78-4a16-947e-3afdf309161f"
+    },
+    {
+      "id": "3894e6c0-1c94-4a32-9285-96a5702f33ff",
+      "friendId": "90d0cccc-e978-4c15-82e7-84762315855c",
+      "date": "2026-02-23",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Blue Bowl \nPost Wedding",
+      "hours": 1,
+      "groupId": "bf7b9f07-99bd-429a-99bd-1bb3a2951e38"
+    },
+    {
+      "id": "987bd1f1-1f73-49bb-9406-433c09ef3e9d",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-02-23",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Blue Bowl \nPost Wedding",
+      "hours": 1,
+      "groupId": "bf7b9f07-99bd-429a-99bd-1bb3a2951e38"
+    },
+    {
+      "id": "3735c897-1bbb-4855-832c-84a0cada66f3",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-02-23",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Blue Bowl \nPost Wedding",
+      "hours": 1,
+      "groupId": "bf7b9f07-99bd-429a-99bd-1bb3a2951e38"
+    },
+    {
+      "id": "59156498-89ee-4b01-930c-cc5d8f5cf758",
+      "friendId": "4cc4ed71-f949-4672-9343-72d01290597c",
+      "date": "2026-02-23",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Blue Bowl \nPost Wedding",
+      "hours": 1,
+      "groupId": "bf7b9f07-99bd-429a-99bd-1bb3a2951e38"
+    },
+    {
+      "id": "5cdcceca-deea-4c48-9dec-bb8cf8a8ee43",
+      "friendId": "36b0f488-b79e-477a-8796-ddf268d90328",
+      "date": "2026-02-23",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Blue Bowl \nPost Wedding",
+      "hours": 1,
+      "groupId": "bf7b9f07-99bd-429a-99bd-1bb3a2951e38"
+    },
+    {
+      "id": "2d7e77ac-4874-4ba6-b945-921f1d4dc2b8",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-02-23",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Blue Bowl \nPost Wedding",
+      "hours": 1,
+      "groupId": "bf7b9f07-99bd-429a-99bd-1bb3a2951e38"
+    },
+    {
+      "id": "09c7d02e-7163-4bed-a30a-a953d48ce3e0",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-03-12",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Taiwan Planning ",
+      "hours": 2,
+      "groupId": "415d718a-daf9-47e2-aaaf-2119d18e13b8"
+    },
+    {
+      "id": "339746a6-51b0-4b6e-bd02-4f18694a3a0b",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-03-12",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Taiwan Planning ",
+      "hours": 2,
+      "groupId": "415d718a-daf9-47e2-aaaf-2119d18e13b8"
+    },
+    {
+      "id": "7146a818-9b25-439e-b62d-3d2140de040c",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-03-12",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Taiwan Planning ",
+      "hours": 2,
+      "groupId": "415d718a-daf9-47e2-aaaf-2119d18e13b8"
+    },
+    {
+      "id": "2c8dc5f8-719c-4f73-b02d-cfc008e295be",
+      "friendId": "4cc4ed71-f949-4672-9343-72d01290597c",
+      "date": "2026-03-12",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Taiwan Planning ",
+      "hours": 2,
+      "groupId": "415d718a-daf9-47e2-aaaf-2119d18e13b8"
+    },
+    {
+      "id": "9efb13e5-2233-4793-a86c-765aa477db2d",
+      "friendId": "d9e8d885-4f58-49e1-99a7-b795fd6facc6",
+      "date": "2026-03-02",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day",
+      "hours": 2,
+      "groupId": "5f8b5491-0a8b-4d62-baae-c3cfd5bbbb38"
+    },
+    {
+      "id": "3bea5dda-206a-4f8e-92d5-8237befd8abb",
+      "friendId": "487bc46b-5e5b-48e0-8305-50045bc72d96",
+      "date": "2026-03-02",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day",
+      "hours": 2,
+      "groupId": "5f8b5491-0a8b-4d62-baae-c3cfd5bbbb38"
+    },
+    {
+      "id": "af4467a1-946f-431a-ad9f-89db67037aeb",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-03-13",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day\nFinal Fantasy",
+      "hours": 6,
+      "groupId": "2a62a1ee-6bc2-4136-817d-849309592383"
+    },
+    {
+      "id": "6264e957-b4cd-471b-9dfa-c67fd19d40ba",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-03-13",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day\nFinal Fantasy",
+      "hours": 6,
+      "groupId": "2a62a1ee-6bc2-4136-817d-849309592383"
+    }
+  ],
+  "friends": [
+    {
+      "id": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "name": "Alan Huang",
+      "createdAt": "2026-03-12T07:31:45.837Z",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "daf6492c-6aed-4e46-a5fa-be454131692f"
+      ]
+    },
+    {
+      "id": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "name": "Brandon Tran",
+      "createdAt": "2026-03-12T07:31:51.104Z",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "daf6492c-6aed-4e46-a5fa-be454131692f"
+      ]
+    },
+    {
+      "id": "0fe53116-eb89-487e-8925-049596b594d3",
+      "name": "Lucas Lin",
+      "createdAt": "2026-03-12T07:31:58.102Z",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "daf6492c-6aed-4e46-a5fa-be454131692f"
+      ]
+    },
+    {
+      "id": "36b0f488-b79e-477a-8796-ddf268d90328",
+      "name": "Brandon Sparks",
+      "createdAt": "2026-03-12T07:57:32.746Z",
+      "groupIds": []
+    },
+    {
+      "id": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "name": "Lindsey Duong",
+      "createdAt": "2026-03-12T08:00:38.108Z",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "12fd57b0-e578-4138-a356-160cfb346845"
+      ]
+    },
+    {
+      "id": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "name": "Steph Tseng",
+      "createdAt": "2026-03-12T08:03:28.260Z",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "12fd57b0-e578-4138-a356-160cfb346845"
+      ]
+    },
+    {
+      "id": "e9822997-bd0c-4415-816f-3cf0be9d0226",
+      "name": "Angel Deocampo",
+      "createdAt": "2026-03-12T08:04:40.766Z",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "12fd57b0-e578-4138-a356-160cfb346845"
+      ]
+    },
+    {
+      "id": "442599c5-75e1-4167-a233-0f00527588d1",
+      "name": "David Walker",
+      "createdAt": "2026-03-12T08:04:45.983Z",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "12fd57b0-e578-4138-a356-160cfb346845",
+        "785966be-efe2-40f1-afb0-7b32cbb32aa6"
+      ]
+    },
+    {
+      "id": "268a6e4c-ade3-4191-8f5d-537a0954fd1d",
+      "name": "Alison Chu",
+      "createdAt": "2026-03-12T08:05:06.113Z",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "12fd57b0-e578-4138-a356-160cfb346845"
+      ]
+    },
+    {
+      "id": "71d9846f-3a1e-4c0c-8a6f-16719a97081b",
+      "name": "Jude Raya",
+      "createdAt": "2026-03-12T08:05:10.455Z",
+      "groupIds": []
+    },
+    {
+      "id": "4cc4ed71-f949-4672-9343-72d01290597c",
+      "name": "Melissa Chin",
+      "createdAt": "2026-03-12T08:12:52.677Z",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "daf6492c-6aed-4e46-a5fa-be454131692f"
+      ]
+    },
+    {
+      "id": "90d0cccc-e978-4c15-82e7-84762315855c",
+      "name": "Van Anh Van-Dinh",
+      "createdAt": "2026-03-13T05:02:55.426Z",
+      "groupIds": []
+    },
+    {
+      "id": "d9e8d885-4f58-49e1-99a7-b795fd6facc6",
+      "name": "Ashley Pagsibigan",
+      "createdAt": "2026-03-13T23:59:45.280Z",
+      "groupIds": [
+        "bec84b83-c8b8-4241-8078-8fc0f76a9c1d"
+      ]
+    },
+    {
+      "id": "487bc46b-5e5b-48e0-8305-50045bc72d96",
+      "name": "Darren Eskandar",
+      "createdAt": "2026-03-13T23:59:52.304Z",
+      "groupIds": [
+        "bec84b83-c8b8-4241-8078-8fc0f76a9c1d"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "name": "Online",
+      "color": "#6b5be1"
+    },
+    {
+      "id": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "name": "Social",
+      "color": "#64dd93"
+    },
+    {
+      "id": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "name": "Riot",
+      "color": "#ee3f3f"
+    },
+    {
+      "id": "1d9b1f14-dd24-4779-8e3f-f3bdf9b20248",
+      "name": "Dance",
+      "color": "#fef37c"
+    }
+  ],
+  "groups": [
+    {
+      "id": "bec84b83-c8b8-4241-8078-8fc0f76a9c1d",
+      "name": "Family",
+      "color": "#fcabf5",
+      "cadenceDays": 14,
+      "exceptionIds": [
+        "487bc46b-5e5b-48e0-8305-50045bc72d96"
+      ]
+    },
+    {
+      "id": "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+      "name": "Friends",
+      "color": "#feba6c",
+      "cadenceDays": 90,
+      "exceptionIds": []
+    },
+    {
+      "id": "12fd57b0-e578-4138-a356-160cfb346845",
+      "name": "ARKADE",
+      "color": "#94ffea",
+      "cadenceDays": null,
+      "exceptionIds": []
+    },
+    {
+      "id": "daf6492c-6aed-4e46-a5fa-be454131692f",
+      "name": "NorCal",
+      "color": "#75a6f5",
+      "cadenceDays": null,
+      "exceptionIds": []
+    },
+    {
+      "id": "785966be-efe2-40f1-afb0-7b32cbb32aa6",
+      "name": "D&D",
+      "color": "#b11b1b",
+      "cadenceDays": null,
+      "exceptionIds": []
+    },
+    {
+      "id": "ff3e5b77-4a31-470b-9654-6570a82db009",
+      "name": "Baby Bottle Squad",
+      "color": "#f8f47c",
+      "cadenceDays": null,
+      "exceptionIds": []
+    },
+    {
+      "id": "2950f996-ad32-4f38-83ff-12b2cbe99589",
+      "name": "Extended Family",
+      "color": "#cc61be",
+      "cadenceDays": null,
+      "exceptionIds": []
+    },
+    {
+      "id": "91f8ab22-b883-4714-8acf-556ae6e8a357",
+      "name": "Uncategorized",
+      "color": "#4f4f4f",
+      "cadenceDays": null,
+      "exceptionIds": []
+    }
+  ],
+  "darkMode": true,
+  "savedAt": "2026-03-14T08:03:40.096Z"
+}
