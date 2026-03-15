@@ -194,6 +194,7 @@ function App() {
             hangouts={hangouts}
             friends={friends}
             categories={categories}
+            groups={groups}
           />
         );
       case 'friends':
