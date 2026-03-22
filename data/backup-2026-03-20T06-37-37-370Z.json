@@ -422,6 +422,86 @@
       "notes": "Moonwalkin\nPractice",
       "hours": 3,
       "groupId": "e6d9bec0-fdd6-476f-b3de-b02748115a2a"
+    },
+    {
+      "id": "64132f0b-0925-42d5-bcc9-5b710d940145",
+      "friendId": "2239d3fe-a558-4d0d-9c55-ea1dc7a389e9",
+      "date": "2026-03-15",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 3,
+      "groupId": "3807055e-c3c1-48c4-ab7c-28bea12379f9",
+      "photos": []
+    },
+    {
+      "id": "45e8a83b-87f3-4635-b289-ff0a99391173",
+      "friendId": "9e6b429a-91b3-43a8-9d0a-f5420275a7cc",
+      "date": "2026-03-15",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 3,
+      "groupId": "3807055e-c3c1-48c4-ab7c-28bea12379f9",
+      "photos": []
+    },
+    {
+      "id": "8927972f-54de-40af-94bd-742585281484",
+      "friendId": "d9e8d885-4f58-49e1-99a7-b795fd6facc6",
+      "date": "2026-03-15",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 3,
+      "groupId": "3807055e-c3c1-48c4-ab7c-28bea12379f9",
+      "photos": []
+    },
+    {
+      "id": "69b925ad-77f4-43ad-9031-165d7ef0cd22",
+      "friendId": "9e6b429a-91b3-43a8-9d0a-f5420275a7cc",
+      "date": "2026-02-24",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 4,
+      "groupId": "f7dd62af-8e91-46d0-8ab8-091a3c55c9fd",
+      "photos": []
+    },
+    {
+      "id": "7b300622-05fd-41fa-8e3e-d5cf9bc39ac0",
+      "friendId": "2239d3fe-a558-4d0d-9c55-ea1dc7a389e9",
+      "date": "2026-02-24",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 4,
+      "groupId": "f7dd62af-8e91-46d0-8ab8-091a3c55c9fd",
+      "photos": []
+    },
+    {
+      "id": "2400420a-c09d-4e56-a3fc-7845474a662c",
+      "friendId": "d9e8d885-4f58-49e1-99a7-b795fd6facc6",
+      "date": "2026-02-24",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 4,
+      "groupId": "f7dd62af-8e91-46d0-8ab8-091a3c55c9fd",
+      "photos": []
+    },
+    {
+      "id": "c5876e66-1526-402e-87c0-39308c66b53c",
+      "friendId": "537385f0-7230-4513-88b5-d494c9a96dde",
+      "date": "2026-03-16",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day",
+      "hours": 3,
+      "groupId": "4f6f2090-dc31-49a6-b16e-069a133ce024",
+      "photos": []
+    },
+    {
+      "id": "fa0c2377-c8fe-4f7a-8129-7a8888610abd",
+      "friendId": "d9e8d885-4f58-49e1-99a7-b795fd6facc6",
+      "date": "2026-03-16",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day",
+      "hours": 1.5,
+      "groupId": "4f6f2090-dc31-49a6-b16e-069a133ce024",
+      "photos": []
     }
   ],
   "friends": [
@@ -556,6 +636,39 @@
         "12fd57b0-e578-4138-a356-160cfb346845"
       ],
       "createdAt": "2026-03-15T06:18:11.338Z"
+    },
+    {
+      "id": "2239d3fe-a558-4d0d-9c55-ea1dc7a389e9",
+      "name": "Mommy",
+      "groupIds": [
+        "bec84b83-c8b8-4241-8078-8fc0f76a9c1d"
+      ],
+      "createdAt": "2026-03-16T05:21:01.358Z"
+    },
+    {
+      "id": "9e6b429a-91b3-43a8-9d0a-f5420275a7cc",
+      "name": "Daddy",
+      "groupIds": [
+        "bec84b83-c8b8-4241-8078-8fc0f76a9c1d"
+      ],
+      "createdAt": "2026-03-16T05:21:07.297Z"
+    },
+    {
+      "id": "537385f0-7230-4513-88b5-d494c9a96dde",
+      "name": "Jason Ngo",
+      "groupIds": [
+        "2950f996-ad32-4f38-83ff-12b2cbe99589"
+      ],
+      "createdAt": "2026-03-18T03:54:49.891Z"
+    },
+    {
+      "id": "b9bf7180-0bb6-4c8b-9b27-5c540ac89889",
+      "name": "Steph Mondragon",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "12fd57b0-e578-4138-a356-160cfb346845"
+      ],
+      "createdAt": "2026-03-20T06:37:37.366Z"
     }
   ],
   "categories": [
@@ -641,5 +754,5 @@
     }
   ],
   "darkMode": true,
-  "savedAt": "2026-03-15T06:18:34.109Z"
+  "savedAt": "2026-03-20T06:37:37.369Z"
 }
