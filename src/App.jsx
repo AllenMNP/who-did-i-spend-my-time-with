@@ -12,7 +12,9 @@ import {
   X,
   Moon,
   Sun,
-  BarChart3
+  BarChart3,
+  ChevronDown,
+  CreditCard
 } from 'lucide-react';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import Dashboard from './components/Dashboard';
@@ -25,7 +27,13 @@ import ListView from './components/ListView';
 import CSVImport from './components/CSVImport';
 import CSVExport from './components/CSVExport';
 import Insights from './components/Insights';
+import BankAnalyzer from './components/bank-analyzer/BankAnalyzer';
 import { cn } from './utils/cn';
+
+const TOOLS = [
+  { id: 'friend-tracker', label: 'Friend Time Tracker', icon: Users },
+  { id: 'bank-analyzer', label: 'Bank Statement Analyzer', icon: CreditCard },
+];
 
 const NAV_ITEMS = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -43,6 +51,8 @@ const NAV_ITEMS = [
 const isElectron = typeof window !== 'undefined' && window.electronAPI?.isElectron;
 
 function App() {
+  const [activeTool, setActiveTool] = useState('friend-tracker');
+  const [toolDropdownOpen, setToolDropdownOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('dashboard');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(isElectron);
@@ -249,6 +259,66 @@ function App() {
     }
   };
 
+  const handleToolChange = (toolId) => {
+    setActiveTool(toolId);
+    setToolDropdownOpen(false);
+    if (toolId === 'friend-tracker') {
+      setActiveTab('dashboard');
+    }
+  };
+
+  const currentTool = TOOLS.find(t => t.id === activeTool);
+
+  const renderToolDropdown = () => (
+    <div className="relative">
+      <button
+        onClick={() => setToolDropdownOpen(!toolDropdownOpen)}
+        className={cn(
+          'flex items-center gap-2 hover:opacity-80 transition-opacity',
+          darkMode ? 'text-white' : 'text-gray-900'
+        )}
+      >
+        <span className="text-xl font-bold">{currentTool?.label}</span>
+        <ChevronDown className={cn(
+          'w-5 h-5 transition-transform',
+          toolDropdownOpen && 'rotate-180'
+        )} />
+      </button>
+      {toolDropdownOpen && (
+        <>
+          <div 
+            className="fixed inset-0 z-40"
+            onClick={() => setToolDropdownOpen(false)}
+          />
+          <div className={cn(
+            'absolute top-full left-0 mt-2 w-64 rounded-lg shadow-lg border z-50',
+            darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
+          )}>
+            {TOOLS.map(tool => {
+              const Icon = tool.icon;
+              const isActive = tool.id === activeTool;
+              return (
+                <button
+                  key={tool.id}
+                  onClick={() => handleToolChange(tool.id)}
+                  className={cn(
+                    'w-full flex items-center gap-3 px-4 py-3 text-left transition-colors first:rounded-t-lg last:rounded-b-lg',
+                    isActive
+                      ? (darkMode ? 'bg-blue-900/50 text-blue-400' : 'bg-blue-50 text-blue-700')
+                      : (darkMode ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-600 hover:bg-gray-50')
+                  )}
+                >
+                  <Icon className="w-5 h-5" />
+                  <span className="font-medium">{tool.label}</span>
+                </button>
+              );
+            })}
+          </div>
+        </>
+      )}
+    </div>
+  );
+
   // Show loading screen while Electron loads data
   if (isLoading) {
     return (
@@ -268,17 +338,59 @@ function App() {
           'lg:hidden px-4 py-3 flex items-center justify-between sticky top-0 z-40 border-b',
           darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
         )}>
-        <h1 className={cn('text-lg font-bold', darkMode ? 'text-white' : 'text-gray-900')}>Friend Time Tracker</h1>
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className={cn(
-            'p-2 rounded-lg',
-            darkMode ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-600 hover:bg-gray-100'
-          )}
-        >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        <div className="text-lg">
+          {renderToolDropdown()}
+        </div>
+        {activeTool === 'friend-tracker' && (
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className={cn(
+              'p-2 rounded-lg',
+              darkMode ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-600 hover:bg-gray-100'
+            )}
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        )}
       </header>
+
+      {/* Desktop Header for Bank Analyzer */}
+      {activeTool === 'bank-analyzer' && (
+        <header className={cn(
+          'hidden lg:flex px-6 py-4 items-center justify-between border-b',
+          darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
+        )}>
+          <div>
+            {renderToolDropdown()}
+            <p className={cn('text-sm mt-1', darkMode ? 'text-gray-400' : 'text-gray-500')}>
+              Analyze bank statements
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            {darkMode ? (
+              <Moon className="w-4 h-4 text-blue-400" />
+            ) : (
+              <Sun className="w-4 h-4 text-yellow-500" />
+            )}
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className={cn(
+                'relative w-11 h-6 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2',
+                darkMode ? 'bg-blue-600' : 'bg-gray-300'
+              )}
+              role="switch"
+              aria-checked={darkMode}
+            >
+              <span
+                className={cn(
+                  'absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-200',
+                  darkMode ? 'translate-x-5' : 'translate-x-0'
+                )}
+              />
+            </button>
+          </div>
+        </header>
+      )}
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
@@ -289,14 +401,15 @@ function App() {
       )}
 
       <div className="flex">
-        {/* Sidebar */}
+        {/* Sidebar - only show for Friend Tracker */}
+        {activeTool === 'friend-tracker' && (
         <aside className={cn(
           'fixed lg:static inset-y-0 left-0 z-40 w-64 border-r transform transition-transform lg:transform-none flex flex-col h-screen lg:h-auto',
           darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200',
           mobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
         )}>
           <div className={cn('p-6 border-b hidden lg:block', darkMode ? 'border-gray-700' : 'border-gray-100')}>
-            <h1 className={cn('text-xl font-bold', darkMode ? 'text-white' : 'text-gray-900')}>Friend Time Tracker</h1>
+            {renderToolDropdown()}
             <p className={cn('text-sm mt-1', darkMode ? 'text-gray-400' : 'text-gray-500')}>Track time with friends</p>
           </div>
           <nav className="p-4 mt-14 lg:mt-0 flex-1">
@@ -358,11 +471,12 @@ function App() {
             </div>
           </div>
         </aside>
+        )}
 
         {/* Main Content */}
         <main className={cn('flex-1 p-4 lg:p-8 min-h-screen', darkMode ? 'bg-gray-900' : '')}>
           <div className="max-w-6xl mx-auto">
-            {renderContent()}
+            {activeTool === 'friend-tracker' ? renderContent() : <BankAnalyzer darkMode={darkMode} />}
           </div>
         </main>
       </div>
