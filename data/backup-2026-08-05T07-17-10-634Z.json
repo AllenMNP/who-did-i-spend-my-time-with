@@ -2699,7 +2699,7 @@
       "id": "b9e72627-3758-49ab-9fcd-c8c5c3927df4",
       "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
       "date": "2026-07-16",
-      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
       "notes": "Dungeons and Dragons",
       "hours": 2.5,
       "groupId": "34dec1ed-bda4-4345-a147-94ee246126cd",
@@ -2709,7 +2709,7 @@
       "id": "36199ab9-4a7a-4123-a58b-cfe9be1d504b",
       "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
       "date": "2026-07-16",
-      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
       "notes": "Dungeons and Dragons",
       "hours": 2.5,
       "groupId": "34dec1ed-bda4-4345-a147-94ee246126cd",
@@ -2719,7 +2719,7 @@
       "id": "f5359e85-bec9-467a-b104-c6face7cb7b4",
       "friendId": "0fe53116-eb89-487e-8925-049596b594d3",
       "date": "2026-07-16",
-      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
       "notes": "Dungeons and Dragons",
       "hours": 2.5,
       "groupId": "34dec1ed-bda4-4345-a147-94ee246126cd",
@@ -3003,6 +3003,396 @@
       "notes": "Yapping",
       "hours": 1,
       "groupId": "4a5016aa-3b96-4ca3-8b64-4824432bba7c",
+      "photos": []
+    },
+    {
+      "id": "8ddb4a7f-495c-4e1b-8a36-5e15d3072235",
+      "friendId": "b9bf7180-0bb6-4c8b-9b27-5c540ac89889",
+      "date": "2026-07-31",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Driving to Vegas",
+      "hours": 5,
+      "groupId": "908dae9b-a3fb-43b7-90f5-6b62166e2503",
+      "photos": []
+    },
+    {
+      "id": "a1ce00fe-3b66-4ffc-976f-450ed6e55699",
+      "friendId": "4303d34e-bc33-4590-a94f-7edd8642f96f",
+      "date": "2026-07-31",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Driving to Vegas",
+      "hours": 5,
+      "groupId": "908dae9b-a3fb-43b7-90f5-6b62166e2503",
+      "photos": []
+    },
+    {
+      "id": "53ade9d9-efb8-4cf9-a955-d4a34db149fd",
+      "friendId": "4303d34e-bc33-4590-a94f-7edd8642f96f",
+      "date": "2026-07-31",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Hot Ones",
+      "hours": 7,
+      "groupId": "c75c4035-9834-4c9b-8dfa-915f7b7b6868",
+      "photos": []
+    },
+    {
+      "id": "f7e91646-bcfe-413c-841a-b2c923dc291f",
+      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
+      "date": "2026-07-31",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Hot Ones",
+      "hours": 7,
+      "groupId": "c75c4035-9834-4c9b-8dfa-915f7b7b6868",
+      "photos": []
+    },
+    {
+      "id": "438549ba-dc8d-4a5a-9b77-347fadf96552",
+      "friendId": "3eff8d9f-4978-4d4f-adb7-d2db8aa67fd5",
+      "date": "2026-07-31",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Hot Ones",
+      "hours": 7,
+      "groupId": "c75c4035-9834-4c9b-8dfa-915f7b7b6868",
+      "photos": []
+    },
+    {
+      "id": "c20e38f2-13ed-4318-9ff2-4a8e9341518e",
+      "friendId": "442599c5-75e1-4167-a233-0f00527588d1",
+      "date": "2026-07-31",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Hot Ones",
+      "hours": 7,
+      "groupId": "c75c4035-9834-4c9b-8dfa-915f7b7b6868",
+      "photos": []
+    },
+    {
+      "id": "f9d711b1-20eb-4d89-99d5-0ab453948ac9",
+      "friendId": "b3b94f97-72a9-46c0-9442-f4f67be5ec96",
+      "date": "2026-07-31",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Hot Ones",
+      "hours": 7,
+      "groupId": "c75c4035-9834-4c9b-8dfa-915f7b7b6868",
+      "photos": []
+    },
+    {
+      "id": "d603dccf-5957-4d01-8dfc-9528e9fef7c0",
+      "friendId": "442599c5-75e1-4167-a233-0f00527588d1",
+      "date": "2026-08-01",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "K-Spa\nEmpire Strips Back\nClubbing",
+      "hours": 18,
+      "groupId": "9da6df67-ec6b-4835-b47e-fc67cf8801f1",
+      "photos": []
+    },
+    {
+      "id": "d544d0d2-056a-4a86-a233-cce83b7a3959",
+      "friendId": "4303d34e-bc33-4590-a94f-7edd8642f96f",
+      "date": "2026-08-01",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "K-Spa\nEmpire Strips Back\nClubbing",
+      "hours": 18,
+      "groupId": "9da6df67-ec6b-4835-b47e-fc67cf8801f1",
+      "photos": []
+    },
+    {
+      "id": "87c65067-35db-4184-8817-7cae37b68a31",
+      "friendId": "3eff8d9f-4978-4d4f-adb7-d2db8aa67fd5",
+      "date": "2026-08-01",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "K-Spa\nEmpire Strips Back\nClubbing",
+      "hours": 18,
+      "groupId": "9da6df67-ec6b-4835-b47e-fc67cf8801f1",
+      "photos": []
+    },
+    {
+      "id": "8f43d3f3-c31f-4df0-a0d7-f259fb9ab7a3",
+      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
+      "date": "2026-08-01",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "K-Spa\nEmpire Strips Back\nClubbing",
+      "hours": 18,
+      "groupId": "9da6df67-ec6b-4835-b47e-fc67cf8801f1",
+      "photos": []
+    },
+    {
+      "id": "524dcd73-6410-4f2a-9c35-a5f6d8933e30",
+      "friendId": "b3b94f97-72a9-46c0-9442-f4f67be5ec96",
+      "date": "2026-08-01",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "K-Spa\nEmpire Strips Back\nClubbing",
+      "hours": 18,
+      "groupId": "9da6df67-ec6b-4835-b47e-fc67cf8801f1",
+      "photos": []
+    },
+    {
+      "id": "94e4b764-4150-4359-ab5b-11f47d499e4c",
+      "friendId": "b9bf7180-0bb6-4c8b-9b27-5c540ac89889",
+      "date": "2026-08-01",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Clubbing",
+      "hours": 3,
+      "groupId": "8198a57f-dbfc-457b-a46e-612d7a69b18e",
+      "photos": []
+    },
+    {
+      "id": "69a5456b-dcc3-4cc8-b273-403cad70ce95",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-08-01",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Clubbing",
+      "hours": 3,
+      "groupId": "8198a57f-dbfc-457b-a46e-612d7a69b18e",
+      "photos": []
+    },
+    {
+      "id": "ed9734cd-9d2c-4844-a583-10e882068ce3",
+      "friendId": "988c8537-73c5-428c-9d9e-ab5e06ae7ee6",
+      "date": "2026-08-01",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Clubbing",
+      "hours": 3,
+      "groupId": "8198a57f-dbfc-457b-a46e-612d7a69b18e",
+      "photos": []
+    },
+    {
+      "id": "b5e78410-14c8-4719-8945-66a6130fb54c",
+      "friendId": "e9822997-bd0c-4415-816f-3cf0be9d0226",
+      "date": "2026-08-01",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Clubbing",
+      "hours": 3,
+      "groupId": "8198a57f-dbfc-457b-a46e-612d7a69b18e",
+      "photos": []
+    },
+    {
+      "id": "d6f98be8-b92e-4d7f-a58b-3e65137e962f",
+      "friendId": "88bdac8c-2b76-4a1d-a49c-f96bcf0bfefd",
+      "date": "2026-08-01",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Clubbing",
+      "hours": 3,
+      "groupId": "8198a57f-dbfc-457b-a46e-612d7a69b18e",
+      "photos": []
+    },
+    {
+      "id": "ff65bcf5-533c-4afc-8c77-998102491b9a",
+      "friendId": "4303d34e-bc33-4590-a94f-7edd8642f96f",
+      "date": "2026-08-02",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Omega Mart\nGreat Big Game Show\nArea 15\nJeapordy",
+      "hours": 14.5,
+      "groupId": "f8687214-c363-430c-bf62-8349237cf253",
+      "photos": []
+    },
+    {
+      "id": "8b1937a8-37b5-406a-86eb-cc96fc68b168",
+      "friendId": "3eff8d9f-4978-4d4f-adb7-d2db8aa67fd5",
+      "date": "2026-08-02",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Omega Mart\nGreat Big Game Show\nArea 15\nJeapordy",
+      "hours": 14.5,
+      "groupId": "f8687214-c363-430c-bf62-8349237cf253",
+      "photos": []
+    },
+    {
+      "id": "7739ee1c-8c74-44da-bd18-b96534e8359a",
+      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
+      "date": "2026-08-02",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Omega Mart\nGreat Big Game Show\nArea 15\nJeapordy",
+      "hours": 14.5,
+      "groupId": "f8687214-c363-430c-bf62-8349237cf253",
+      "photos": []
+    },
+    {
+      "id": "1fe18f0e-06c1-42fa-9d90-0aec2ca2062e",
+      "friendId": "442599c5-75e1-4167-a233-0f00527588d1",
+      "date": "2026-08-02",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Omega Mart\nGreat Big Game Show\nArea 15\nJeapordy",
+      "hours": 14.5,
+      "groupId": "f8687214-c363-430c-bf62-8349237cf253",
+      "photos": []
+    },
+    {
+      "id": "e49f55fc-588f-46d4-80bd-fd606b0e3987",
+      "friendId": "b3b94f97-72a9-46c0-9442-f4f67be5ec96",
+      "date": "2026-08-02",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Omega Mart\nGreat Big Game Show\nArea 15\nJeapordy",
+      "hours": 14.5,
+      "groupId": "f8687214-c363-430c-bf62-8349237cf253",
+      "photos": []
+    },
+    {
+      "id": "fd6b4172-11f0-4acb-8ca0-2c3b2b1848c7",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-08-02",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Omega Mart\nGreat Big Game Show\nArea 15\nJeapordy",
+      "hours": 14.5,
+      "groupId": "f8687214-c363-430c-bf62-8349237cf253",
+      "photos": []
+    },
+    {
+      "id": "5f16bd0d-033f-48ad-bce9-b7a673f046b2",
+      "friendId": "b9bf7180-0bb6-4c8b-9b27-5c540ac89889",
+      "date": "2026-08-02",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Omega Mart\nGreat Big Game Show\nArea 15\nJeapordy",
+      "hours": 14.5,
+      "groupId": "f8687214-c363-430c-bf62-8349237cf253",
+      "photos": []
+    },
+    {
+      "id": "9c67874f-e0a7-41f9-bed4-51c178f37cde",
+      "friendId": "988c8537-73c5-428c-9d9e-ab5e06ae7ee6",
+      "date": "2026-08-02",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Omega Mart\nGreat Big Game Show\nArea 15\nJeapordy",
+      "hours": 14.5,
+      "groupId": "f8687214-c363-430c-bf62-8349237cf253",
+      "photos": []
+    },
+    {
+      "id": "8b94f2a9-426f-4219-a7d4-029fa8bdc363",
+      "friendId": "e9822997-bd0c-4415-816f-3cf0be9d0226",
+      "date": "2026-08-02",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Omega Mart\nGreat Big Game Show\nArea 15\nJeapordy",
+      "hours": 14.5,
+      "groupId": "f8687214-c363-430c-bf62-8349237cf253",
+      "photos": []
+    },
+    {
+      "id": "2bba97ab-c817-4e84-a0c4-e0ff49d19db6",
+      "friendId": "88bdac8c-2b76-4a1d-a49c-f96bcf0bfefd",
+      "date": "2026-08-02",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Omega Mart\nGreat Big Game Show\nArea 15\nJeapordy",
+      "hours": 14.5,
+      "groupId": "f8687214-c363-430c-bf62-8349237cf253",
+      "photos": []
+    },
+    {
+      "id": "ccf6238f-121a-44c5-a165-4662cd6bef84",
+      "friendId": "4303d34e-bc33-4590-a94f-7edd8642f96f",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Last Day of Vegas",
+      "hours": 5,
+      "groupId": "d03aaf29-aac2-4829-b24d-05b3abc6a453",
+      "photos": []
+    },
+    {
+      "id": "68dfa824-ee03-442b-b03f-797093b0eb9c",
+      "friendId": "442599c5-75e1-4167-a233-0f00527588d1",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Last Day of Vegas",
+      "hours": 5,
+      "groupId": "d03aaf29-aac2-4829-b24d-05b3abc6a453",
+      "photos": []
+    },
+    {
+      "id": "8d440075-f0ab-4651-8ae2-8e50615920fe",
+      "friendId": "3eff8d9f-4978-4d4f-adb7-d2db8aa67fd5",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Last Day of Vegas",
+      "hours": 5,
+      "groupId": "d03aaf29-aac2-4829-b24d-05b3abc6a453",
+      "photos": []
+    },
+    {
+      "id": "8069aa1c-0659-4617-af98-20132351bc0b",
+      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Last Day of Vegas",
+      "hours": 5,
+      "groupId": "d03aaf29-aac2-4829-b24d-05b3abc6a453",
+      "photos": []
+    },
+    {
+      "id": "8e564653-0109-42ce-ba31-188a5fd04a72",
+      "friendId": "b3b94f97-72a9-46c0-9442-f4f67be5ec96",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Last Day of Vegas",
+      "hours": 5,
+      "groupId": "d03aaf29-aac2-4829-b24d-05b3abc6a453",
+      "photos": []
+    },
+    {
+      "id": "62228f27-aa15-42dc-a78e-c9d3dec6b1e8",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Last Day of Vegas",
+      "hours": 5,
+      "groupId": "d03aaf29-aac2-4829-b24d-05b3abc6a453",
+      "photos": []
+    },
+    {
+      "id": "28c2d116-30dd-48f6-8549-b01a6f2dfef5",
+      "friendId": "b9bf7180-0bb6-4c8b-9b27-5c540ac89889",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Last Day of Vegas",
+      "hours": 5,
+      "groupId": "d03aaf29-aac2-4829-b24d-05b3abc6a453",
+      "photos": []
+    },
+    {
+      "id": "c88e89dc-5710-4f0b-8aa1-fffe0e110bfd",
+      "friendId": "988c8537-73c5-428c-9d9e-ab5e06ae7ee6",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Last Day of Vegas",
+      "hours": 5,
+      "groupId": "d03aaf29-aac2-4829-b24d-05b3abc6a453",
+      "photos": []
+    },
+    {
+      "id": "bb4f1877-b066-4adc-a9fd-94223483a7e7",
+      "friendId": "e9822997-bd0c-4415-816f-3cf0be9d0226",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Last Day of Vegas",
+      "hours": 5,
+      "groupId": "d03aaf29-aac2-4829-b24d-05b3abc6a453",
+      "photos": []
+    },
+    {
+      "id": "07976a97-61d7-423e-b953-b9ea1c9ff22b",
+      "friendId": "88bdac8c-2b76-4a1d-a49c-f96bcf0bfefd",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Last Day of Vegas",
+      "hours": 5,
+      "groupId": "d03aaf29-aac2-4829-b24d-05b3abc6a453",
+      "photos": []
+    },
+    {
+      "id": "745fed9a-3067-46f5-a56f-61c5917b29d3",
+      "friendId": "4303d34e-bc33-4590-a94f-7edd8642f96f",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Driving back from Vegas",
+      "hours": 4,
+      "groupId": "858e2a67-a38d-477f-9dfc-f65e30ecb42f",
+      "photos": []
+    },
+    {
+      "id": "a0345d96-68f9-40cc-908f-e41709219edd",
+      "friendId": "b9bf7180-0bb6-4c8b-9b27-5c540ac89889",
+      "date": "2026-08-03",
+      "categoryId": "de832b5e-b5e4-47dc-916c-5232f5a5ff42",
+      "notes": "Driving back from Vegas",
+      "hours": 4,
+      "groupId": "858e2a67-a38d-477f-9dfc-f65e30ecb42f",
       "photos": []
     }
   ],
@@ -3438,5 +3828,5 @@
     }
   ],
   "darkMode": true,
-  "savedAt": "2026-08-05T06:52:51.572Z"
+  "savedAt": "2026-08-05T07:17:10.629Z"
 }
