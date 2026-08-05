@@ -42,6 +42,8 @@ export function HangoutForm({
   const [newFriendGroupIds, setNewFriendGroupIds] = useState([]);
   const [newCategoryName, setNewCategoryName] = useState('');
   const [newCategoryColor, setNewCategoryColor] = useState('#3B82F6');
+  const [friendSearch, setFriendSearch] = useState('');
+  const [showFriendDropdown, setShowFriendDropdown] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -199,22 +201,47 @@ export function HangoutForm({
                 </div>
               )}
 
-              {/* Friend selection dropdown */}
+              {/* Friend search input */}
               <div className="flex gap-2">
-                <Select
-                  value=""
-                  onChange={(e) => {
-                    if (e.target.value && !formData.friendIds.includes(e.target.value)) {
-                      setFormData({ ...formData, friendIds: [...formData.friendIds, e.target.value] });
-                    }
-                  }}
-                  className="flex-1"
-                >
-                  <option value="">Select friends...</option>
-                  {friends.filter(f => !formData.friendIds.includes(f.id)).map((f) => (
-                    <option key={f.id} value={f.id}>{f.name}</option>
-                  ))}
-                </Select>
+                <div className="relative flex-1">
+                  <Input
+                    type="text"
+                    placeholder="Search friends..."
+                    value={friendSearch}
+                    onChange={(e) => {
+                      setFriendSearch(e.target.value);
+                      setShowFriendDropdown(true);
+                    }}
+                    onFocus={() => { if (friendSearch) setShowFriendDropdown(true); }}
+                    onBlur={() => setTimeout(() => setShowFriendDropdown(false), 150)}
+                    autoComplete="off"
+                  />
+                  {showFriendDropdown && friendSearch && (
+                    <ul className="absolute z-10 w-full mt-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-md shadow-lg max-h-48 overflow-y-auto">
+                      {friends
+                        .filter(f => !formData.friendIds.includes(f.id) && f.name.toLowerCase().includes(friendSearch.toLowerCase()))
+                        .length === 0 ? (
+                        <li className="px-3 py-2 text-sm text-gray-500 dark:text-gray-400">No friends found</li>
+                      ) : (
+                        friends
+                          .filter(f => !formData.friendIds.includes(f.id) && f.name.toLowerCase().includes(friendSearch.toLowerCase()))
+                          .map(f => (
+                            <li
+                              key={f.id}
+                              onMouseDown={() => {
+                                setFormData(prev => ({ ...prev, friendIds: [...prev.friendIds, f.id] }));
+                                setFriendSearch('');
+                                setShowFriendDropdown(false);
+                              }}
+                              className="px-3 py-2 text-sm cursor-pointer text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700"
+                            >
+                              {f.name}
+                            </li>
+                          ))
+                      )}
+                    </ul>
+                  )}
+                </div>
                 <Button 
                   type="button" 
                   variant="outline" 

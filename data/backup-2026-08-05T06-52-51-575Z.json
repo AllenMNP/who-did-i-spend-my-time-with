@@ -596,16 +596,6 @@
       "photos": []
     },
     {
-      "id": "87cf0225-24eb-41d9-bd42-9a6ee23ffbe7",
-      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
-      "date": "2026-03-21",
-      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
-      "notes": "Dinner\nDumplings\nSeven Grams",
-      "hours": 2,
-      "groupId": "8d3a5111-c16d-4cf9-94d6-65386a5d2c8e",
-      "photos": []
-    },
-    {
       "id": "2e5c42d5-b8cb-4768-a83a-a8764598c534",
       "friendId": "e9822997-bd0c-4415-816f-3cf0be9d0226",
       "date": "2026-03-21",
@@ -1756,16 +1746,6 @@
       "photos": []
     },
     {
-      "id": "8cb95a4f-78f7-4b45-9876-588df7083627",
-      "friendId": "bb05f199-e573-4253-bb8e-c4ad2729b2cd",
-      "date": "2026-06-06",
-      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
-      "notes": "Suit Shopping\nEscape Room",
-      "hours": 6,
-      "groupId": "632f100a-b7bf-416e-9fd3-17f9ec588243",
-      "photos": []
-    },
-    {
       "id": "a6c1a86d-d13f-404f-9f18-9967eede604f",
       "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
       "date": "2026-06-09",
@@ -1946,8 +1926,8 @@
       "photos": []
     },
     {
-      "id": "23088663-2fc4-480f-b62e-7ca4dbc28d10",
-      "friendId": "bb05f199-e573-4253-bb8e-c4ad2729b2cd",
+      "id": "7a206256-5fff-4742-8160-bc9cc1127b37",
+      "friendId": "988c8537-73c5-428c-9d9e-ab5e06ae7ee6",
       "date": "2026-06-13",
       "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
       "notes": "Chatting",
@@ -1956,13 +1936,1073 @@
       "photos": []
     },
     {
-      "id": "7a206256-5fff-4742-8160-bc9cc1127b37",
-      "friendId": "988c8537-73c5-428c-9d9e-ab5e06ae7ee6",
+      "id": "c36a5673-ae2b-4c51-8354-41a1cd6c0722",
+      "friendId": "2239d3fe-a558-4d0d-9c55-ea1dc7a389e9",
+      "date": "2026-06-14",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Board Games",
+      "hours": 5,
+      "groupId": "aee41243-60fb-425c-84e4-3291a4b38ed8",
+      "photos": []
+    },
+    {
+      "id": "71fada3f-eaa1-42e4-b0e3-9cf9ad8bc63f",
+      "friendId": "9e6b429a-91b3-43a8-9d0a-f5420275a7cc",
+      "date": "2026-06-14",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Board Games",
+      "hours": 5,
+      "groupId": "aee41243-60fb-425c-84e4-3291a4b38ed8",
+      "photos": []
+    },
+    {
+      "id": "0b9cb99a-c110-40d2-b466-bdae5f3155ca",
+      "friendId": "d9e8d885-4f58-49e1-99a7-b795fd6facc6",
+      "date": "2026-06-14",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Board Games",
+      "hours": 5,
+      "groupId": "aee41243-60fb-425c-84e4-3291a4b38ed8",
+      "photos": []
+    },
+    {
+      "id": "f02c7735-41a6-45fe-9cb1-54c00112b293",
+      "friendId": "d5d1595d-58d6-4948-9a08-ba4b60facf17",
+      "date": "2026-06-15",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day",
+      "hours": 4,
+      "groupId": "90a31575-a3f3-4532-bb5f-a55c6d1418c9",
+      "photos": []
+    },
+    {
+      "id": "8885a157-f553-4246-a035-5bcf7463fd1d",
+      "friendId": "ef29ce8d-a06b-4eca-868d-79ce581b1d96",
+      "date": "2026-06-15",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day",
+      "hours": 4,
+      "groupId": "90a31575-a3f3-4532-bb5f-a55c6d1418c9",
+      "photos": []
+    },
+    {
+      "id": "67ee37db-f46a-493b-ab49-be66b13a6349",
+      "friendId": "26002b3f-1610-4965-aa3c-8a8e4e0e78dd",
+      "date": "2026-06-15",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day",
+      "hours": 4,
+      "groupId": "90a31575-a3f3-4532-bb5f-a55c6d1418c9",
+      "photos": []
+    },
+    {
+      "id": "11082e82-1019-4782-b222-7858b5c06cb7",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-06-15",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riftbound",
+      "hours": 4,
+      "groupId": "9324af1c-5c0f-42b7-bfb5-1976dea94a4b",
+      "photos": []
+    },
+    {
+      "id": "8ac803c0-14f4-4f26-b879-9c2f5ef716a2",
+      "friendId": "d5d1595d-58d6-4948-9a08-ba4b60facf17",
+      "date": "2026-06-15",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riftbound",
+      "hours": 4,
+      "groupId": "9324af1c-5c0f-42b7-bfb5-1976dea94a4b",
+      "photos": []
+    },
+    {
+      "id": "a59fdfb4-207f-4047-aac1-d1019c748055",
+      "friendId": "26002b3f-1610-4965-aa3c-8a8e4e0e78dd",
+      "date": "2026-06-15",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riftbound",
+      "hours": 4,
+      "groupId": "9324af1c-5c0f-42b7-bfb5-1976dea94a4b",
+      "photos": []
+    },
+    {
+      "id": "06f919d6-6711-42b6-a9c7-ad8d3305ee54",
+      "friendId": "ef29ce8d-a06b-4eca-868d-79ce581b1d96",
+      "date": "2026-06-15",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riftbound",
+      "hours": 4,
+      "groupId": "9324af1c-5c0f-42b7-bfb5-1976dea94a4b",
+      "photos": []
+    },
+    {
+      "id": "0fbf0da0-1296-4a83-b981-29432d51525b",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-06-18",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "687e8ccf-8daa-4592-a19e-be955b176431",
+      "photos": []
+    },
+    {
+      "id": "c040aafd-e7f3-4887-a2c9-3ee609838794",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-06-18",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "687e8ccf-8daa-4592-a19e-be955b176431",
+      "photos": []
+    },
+    {
+      "id": "0ac9d5a1-6838-4cb2-81e5-f481d5207fe0",
+      "friendId": "0fe53116-eb89-487e-8925-049596b594d3",
+      "date": "2026-06-18",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "687e8ccf-8daa-4592-a19e-be955b176431",
+      "photos": []
+    },
+    {
+      "id": "ee67785f-425a-412a-9269-2e092e390420",
+      "friendId": "36b0f488-b79e-477a-8796-ddf268d90328",
+      "date": "2026-06-19",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "BBQ\nPool\nChatting",
+      "hours": 8,
+      "groupId": "d3e344db-eeda-412e-9490-0235ac5d63fa",
+      "photos": []
+    },
+    {
+      "id": "f399a27c-b6c4-4ba9-8c4f-97f350f36ae7",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-06-19",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "BBQ\nPool\nChatting",
+      "hours": 8,
+      "groupId": "d3e344db-eeda-412e-9490-0235ac5d63fa",
+      "photos": []
+    },
+    {
+      "id": "533ba54e-beb4-4838-acf2-c11b1fcb57a1",
+      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
       "date": "2026-06-13",
       "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
       "notes": "Chatting",
       "hours": 1.5,
       "groupId": "297b2ee0-862f-4a2a-8a84-d3024d08a8f5",
+      "photos": []
+    },
+    {
+      "id": "443afe2a-b3e1-46b2-8943-1298abc0f2f3",
+      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
+      "date": "2026-03-21",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner\nDumplings\nSeven Grams",
+      "hours": 2,
+      "groupId": "8d3a5111-c16d-4cf9-94d6-65386a5d2c8e",
+      "photos": []
+    },
+    {
+      "id": "b4dac9d0-e22b-4300-9054-b52fe996b193",
+      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
+      "date": "2026-06-06",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Suit Shopping\nEscape Room",
+      "hours": 6,
+      "groupId": "632f100a-b7bf-416e-9fd3-17f9ec588243",
+      "photos": []
+    },
+    {
+      "id": "4bae24c4-b0bc-4135-b74b-c54767f1ec3e",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-06-25",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "03c56e91-d97f-4a0c-8414-4e9190b053b7",
+      "photos": []
+    },
+    {
+      "id": "5042e103-9983-4958-b4ec-59444c86d2ec",
+      "friendId": "0fe53116-eb89-487e-8925-049596b594d3",
+      "date": "2026-06-25",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "03c56e91-d97f-4a0c-8414-4e9190b053b7",
+      "photos": []
+    },
+    {
+      "id": "705a8908-fd1e-49c7-a6c0-c62092141b47",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-06-25",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "03c56e91-d97f-4a0c-8414-4e9190b053b7",
+      "photos": []
+    },
+    {
+      "id": "ed58f008-e80b-467b-b201-ca569f53955c",
+      "friendId": "2239d3fe-a558-4d0d-9c55-ea1dc7a389e9",
+      "date": "2026-06-26",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 3,
+      "groupId": "e7c67f89-89d0-4ba7-bd76-81c33106becd",
+      "photos": []
+    },
+    {
+      "id": "820e9679-d91d-4129-9935-83bba9eea531",
+      "friendId": "9e6b429a-91b3-43a8-9d0a-f5420275a7cc",
+      "date": "2026-06-26",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 3,
+      "groupId": "e7c67f89-89d0-4ba7-bd76-81c33106becd",
+      "photos": []
+    },
+    {
+      "id": "883f97fd-a5f7-4d90-b01a-9ccf6ce47982",
+      "friendId": "d9e8d885-4f58-49e1-99a7-b795fd6facc6",
+      "date": "2026-06-26",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 3,
+      "groupId": "e7c67f89-89d0-4ba7-bd76-81c33106becd",
+      "photos": []
+    },
+    {
+      "id": "5b3e02cc-1d7d-43c4-aed6-6b1fb9bc4afc",
+      "friendId": "2239d3fe-a558-4d0d-9c55-ea1dc7a389e9",
+      "date": "2026-06-27",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 5,
+      "groupId": "adcb5423-3054-438d-a6b3-1395b9fc8464",
+      "photos": []
+    },
+    {
+      "id": "063f2e30-0c95-45e9-8e8a-bbf93d55907f",
+      "friendId": "9e6b429a-91b3-43a8-9d0a-f5420275a7cc",
+      "date": "2026-06-27",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 5,
+      "groupId": "adcb5423-3054-438d-a6b3-1395b9fc8464",
+      "photos": []
+    },
+    {
+      "id": "7c2f45d6-372b-4893-a535-b78cb820a780",
+      "friendId": "d9e8d885-4f58-49e1-99a7-b795fd6facc6",
+      "date": "2026-06-27",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 5,
+      "groupId": "adcb5423-3054-438d-a6b3-1395b9fc8464",
+      "photos": []
+    },
+    {
+      "id": "d23d684f-fcfb-43e5-abf7-068006601568",
+      "friendId": "268a6e4c-ade3-4191-8f5d-537a0954fd1d",
+      "date": "2026-06-28",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Crafts",
+      "hours": 8,
+      "groupId": "731ab4fd-078d-4ff1-ac82-ccc918c6cee6",
+      "photos": []
+    },
+    {
+      "id": "28ca5c29-f430-420a-a60e-997b78eae08d",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-06-28",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Crafts",
+      "hours": 8,
+      "groupId": "731ab4fd-078d-4ff1-ac82-ccc918c6cee6",
+      "photos": []
+    },
+    {
+      "id": "dd2b0e5d-3893-47ff-a191-a5c0caf81bad",
+      "friendId": "b8b24f24-88ae-424b-b27f-9bb64d733203",
+      "date": "2026-06-29",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound",
+      "hours": 5,
+      "groupId": null,
+      "photos": []
+    },
+    {
+      "id": "7a67ee57-259d-4ad9-a41a-09e804f22d70",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-07-02",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Hangout",
+      "hours": 5,
+      "groupId": null,
+      "photos": []
+    },
+    {
+      "id": "7998e101-491f-4894-940d-43b6cbb42101",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-07-02",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 2,
+      "groupId": "1241df24-4b04-46fa-88da-29e0563fc391",
+      "photos": []
+    },
+    {
+      "id": "658753fe-14c6-4919-84d7-60c6309b5657",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-07-02",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 2,
+      "groupId": "1241df24-4b04-46fa-88da-29e0563fc391",
+      "photos": []
+    },
+    {
+      "id": "fa1344c2-27a3-4867-949f-8e5e4f271764",
+      "friendId": "0fe53116-eb89-487e-8925-049596b594d3",
+      "date": "2026-07-02",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 2,
+      "groupId": "1241df24-4b04-46fa-88da-29e0563fc391",
+      "photos": []
+    },
+    {
+      "id": "1ec4b550-645d-4eb3-957e-4c99ae9492db",
+      "friendId": "f9cb4c5b-d53c-4e4c-92ed-a5bdc8481b76",
+      "date": "2026-07-02",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 2,
+      "groupId": "1241df24-4b04-46fa-88da-29e0563fc391",
+      "photos": []
+    },
+    {
+      "id": "60784308-f641-477a-9c10-3a5b1a23b916",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-07-03",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Anime Expo",
+      "hours": 1,
+      "groupId": "65ac2263-1943-4538-80dc-8cbcc1d26a35",
+      "photos": []
+    },
+    {
+      "id": "94f3b1b7-995a-4147-a6db-d408d8ce9274",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-07-03",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Anime Expo",
+      "hours": 1,
+      "groupId": "65ac2263-1943-4538-80dc-8cbcc1d26a35",
+      "photos": []
+    },
+    {
+      "id": "f015dd4e-15f9-4e15-8992-66b10634db1f",
+      "friendId": "f9cb4c5b-d53c-4e4c-92ed-a5bdc8481b76",
+      "date": "2026-07-03",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Anime Expo",
+      "hours": 1,
+      "groupId": "65ac2263-1943-4538-80dc-8cbcc1d26a35",
+      "photos": []
+    },
+    {
+      "id": "dec8dc37-eac9-4e2e-bcae-086c3c6ed240",
+      "friendId": "0fe53116-eb89-487e-8925-049596b594d3",
+      "date": "2026-07-03",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Anime Expo",
+      "hours": 1,
+      "groupId": "65ac2263-1943-4538-80dc-8cbcc1d26a35",
+      "photos": []
+    },
+    {
+      "id": "62792c4d-fe1f-4efc-ae08-40e0a7297203",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-07-05",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound Tournament",
+      "hours": 8,
+      "groupId": "5aab93e9-40e8-445e-b659-2f255544d8aa",
+      "photos": []
+    },
+    {
+      "id": "8ee10593-74f0-4e70-b823-c87aaebf727c",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-07-05",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound Tournament",
+      "hours": 8,
+      "groupId": "5aab93e9-40e8-445e-b659-2f255544d8aa",
+      "photos": []
+    },
+    {
+      "id": "e2ab5a73-8bc4-4ef3-8713-c5580c0a99e6",
+      "friendId": "442599c5-75e1-4167-a233-0f00527588d1",
+      "date": "2026-07-05",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound Tournament",
+      "hours": 6,
+      "groupId": "5aab93e9-40e8-445e-b659-2f255544d8aa",
+      "photos": []
+    },
+    {
+      "id": "fde1e911-c570-45d4-9c32-aec6403782e6",
+      "friendId": "e6b9ec66-9339-4194-8e23-001d99ff40f0",
+      "date": "2026-07-05",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound Tournament",
+      "hours": 5.5,
+      "groupId": "5aab93e9-40e8-445e-b659-2f255544d8aa",
+      "photos": []
+    },
+    {
+      "id": "06870cee-d6a2-4de3-bba6-880e265737af",
+      "friendId": "eaa0ea33-9bcd-47c4-a0d0-5327cc6906ae",
+      "date": "2026-07-05",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound Tournament",
+      "hours": 8,
+      "groupId": "5aab93e9-40e8-445e-b659-2f255544d8aa",
+      "photos": []
+    },
+    {
+      "id": "d2809500-60ab-4f98-ac8e-983032f31a33",
+      "friendId": "e9822997-bd0c-4415-816f-3cf0be9d0226",
+      "date": "2026-07-05",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound Tournament",
+      "hours": 6,
+      "groupId": "5aab93e9-40e8-445e-b659-2f255544d8aa",
+      "photos": []
+    },
+    {
+      "id": "a3ce1ad5-13d3-45ab-aef8-4f87a3abad2a",
+      "friendId": "b8b24f24-88ae-424b-b27f-9bb64d733203",
+      "date": "2026-07-05",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound Tournament",
+      "hours": 8,
+      "groupId": "5aab93e9-40e8-445e-b659-2f255544d8aa",
+      "photos": []
+    },
+    {
+      "id": "5421d63a-55b2-42a0-8e75-6472a1676379",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Final Fantasy 16",
+      "hours": 4,
+      "groupId": "00a4b111-996e-4094-9137-ea198a846ec5",
+      "photos": []
+    },
+    {
+      "id": "c083443f-9063-42ff-bb11-6dcc1342b972",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Final Fantasy 16",
+      "hours": 4,
+      "groupId": "00a4b111-996e-4094-9137-ea198a846ec5",
+      "photos": []
+    },
+    {
+      "id": "07d28e4a-9cde-47a3-bdf6-079e263b32ce",
+      "friendId": "268a6e4c-ade3-4191-8f5d-537a0954fd1d",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "43418491-1d3f-4d9b-8b36-a44bc92e1a33",
+      "friendId": "26002b3f-1610-4965-aa3c-8a8e4e0e78dd",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "1a2c4809-58e6-4fb5-9fce-314145c1668f",
+      "friendId": "88bdac8c-2b76-4a1d-a49c-f96bcf0bfefd",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "ea864cb8-6189-45b8-a14b-6108c2111ddd",
+      "friendId": "b9bf7180-0bb6-4c8b-9b27-5c540ac89889",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "171e6cb9-ec33-4517-97d8-2a37a40557d7",
+      "friendId": "4303d34e-bc33-4590-a94f-7edd8642f96f",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "79987ec4-ea6d-4494-ae8e-ed30d79021fb",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "fc0ecb39-489c-4ab8-bd80-97a0b1adc09f",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "2da3164d-bed3-4881-99f1-6b9576ef8ee4",
+      "friendId": "3ae0c93c-b260-4c76-96e5-39ab7ba51f22",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "d30326fc-c061-4dde-be26-95359bfda69e",
+      "friendId": "4141f6f9-659e-4922-97eb-55ae34d242de",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "434f8995-7e1c-4dc8-97ca-8ab11161ba39",
+      "friendId": "3d7aa835-69a9-4e17-9bdb-d514e7965a8f",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "2fd7a1db-d42f-4a48-8ebb-abb5d76c97b6",
+      "friendId": "988c8537-73c5-428c-9d9e-ab5e06ae7ee6",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "7aef2c42-8f7d-4b14-b913-3a276a392390",
+      "friendId": "b3b94f97-72a9-46c0-9442-f4f67be5ec96",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "b100cd6d-4afa-418f-9855-4e0b348a6b1e",
+      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
+      "date": "2026-07-10",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Adrienne's Housegagement",
+      "hours": 4,
+      "groupId": "b45edccd-4548-47cc-94d6-4fdb24833361",
+      "photos": []
+    },
+    {
+      "id": "596c911d-7d72-4ff8-8f20-8da9f6faf441",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-07-11",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Lindsey's Dad's Birthday",
+      "hours": 7,
+      "groupId": "370d6423-363a-47dc-aa7c-b34029c34ff0",
+      "photos": []
+    },
+    {
+      "id": "ac25c7ca-8526-48bd-b229-eeca3fda7f83",
+      "friendId": "36b0f488-b79e-477a-8796-ddf268d90328",
+      "date": "2026-07-11",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Lindsey's Dad's Birthday",
+      "hours": 7,
+      "groupId": "370d6423-363a-47dc-aa7c-b34029c34ff0",
+      "photos": []
+    },
+    {
+      "id": "de086536-ac48-4fd0-ba78-eef0c454074b",
+      "friendId": "84e6c3b6-8d51-448a-ae79-d98cdcf87c1d",
+      "date": "2026-07-11",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Lindsey's Dad's Birthday",
+      "hours": 7,
+      "groupId": "370d6423-363a-47dc-aa7c-b34029c34ff0",
+      "photos": []
+    },
+    {
+      "id": "94ace360-8c34-4012-8139-e221e9fd9767",
+      "friendId": "a35aae3b-35c7-497d-b811-8333b792db30",
+      "date": "2026-07-11",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Lindsey's Dad's Birthday",
+      "hours": 7,
+      "groupId": "370d6423-363a-47dc-aa7c-b34029c34ff0",
+      "photos": []
+    },
+    {
+      "id": "6c0568e5-cc80-4310-a77c-caee22bfbfe0",
+      "friendId": "b8b24f24-88ae-424b-b27f-9bb64d733203",
+      "date": "2026-07-12",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 5,
+      "groupId": "6439e859-ce7c-4699-9501-6686af392f05",
+      "photos": []
+    },
+    {
+      "id": "ab6fef42-2b8b-402e-8a17-56c35c7cd9ff",
+      "friendId": "eaa0ea33-9bcd-47c4-a0d0-5327cc6906ae",
+      "date": "2026-07-12",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 5,
+      "groupId": "6439e859-ce7c-4699-9501-6686af392f05",
+      "photos": []
+    },
+    {
+      "id": "5a16fc09-946b-4796-9ced-2ab5441b64d6",
+      "friendId": "442599c5-75e1-4167-a233-0f00527588d1",
+      "date": "2026-07-12",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 5,
+      "groupId": "6439e859-ce7c-4699-9501-6686af392f05",
+      "photos": []
+    },
+    {
+      "id": "fe3bde14-5094-4908-8bc7-8bd90e0a8050",
+      "friendId": "e6b9ec66-9339-4194-8e23-001d99ff40f0",
+      "date": "2026-07-12",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 5,
+      "groupId": "6439e859-ce7c-4699-9501-6686af392f05",
+      "photos": []
+    },
+    {
+      "id": "17fcab89-a315-4b19-aab0-7f62b9203541",
+      "friendId": "780b72cb-40ba-4476-b709-f022ac7345cd",
+      "date": "2026-07-12",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 5,
+      "groupId": "6439e859-ce7c-4699-9501-6686af392f05",
+      "photos": []
+    },
+    {
+      "id": "43468700-2827-4024-8e49-640146234fb9",
+      "friendId": "71d9846f-3a1e-4c0c-8a6f-16719a97081b",
+      "date": "2026-07-12",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 5,
+      "groupId": "6439e859-ce7c-4699-9501-6686af392f05",
+      "photos": []
+    },
+    {
+      "id": "05438136-f088-484a-a7c1-478a47006b54",
+      "friendId": "f473d6ab-8fcb-4a0b-b791-acea5afdbaaf",
+      "date": "2026-07-12",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 5,
+      "groupId": "6439e859-ce7c-4699-9501-6686af392f05",
+      "photos": []
+    },
+    {
+      "id": "fb7da8c0-dd0f-45b0-af9f-20c712d69902",
+      "friendId": "1f93cbbc-ffbe-4cc5-a5f1-3acc9556d7bb",
+      "date": "2026-07-12",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 5,
+      "groupId": "6439e859-ce7c-4699-9501-6686af392f05",
+      "photos": []
+    },
+    {
+      "id": "916df366-68bc-45a6-88b6-b205b7c77ce1",
+      "friendId": "71d9846f-3a1e-4c0c-8a6f-16719a97081b",
+      "date": "2026-07-12",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Boiling Point",
+      "hours": 4,
+      "groupId": null,
+      "photos": []
+    },
+    {
+      "id": "b0d40911-3358-4f02-bf5f-b493c702a2a0",
+      "friendId": "2239d3fe-a558-4d0d-9c55-ea1dc7a389e9",
+      "date": "2026-07-14",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 2.5,
+      "groupId": "6b7e777d-7be2-4d10-a4f9-2eca940e3650",
+      "photos": []
+    },
+    {
+      "id": "cd7d2f89-6814-4432-8366-8e7addbd86fb",
+      "friendId": "9e6b429a-91b3-43a8-9d0a-f5420275a7cc",
+      "date": "2026-07-14",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 2.5,
+      "groupId": "6b7e777d-7be2-4d10-a4f9-2eca940e3650",
+      "photos": []
+    },
+    {
+      "id": "b9e72627-3758-49ab-9fcd-c8c5c3927df4",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-07-16",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 2.5,
+      "groupId": "34dec1ed-bda4-4345-a147-94ee246126cd",
+      "photos": []
+    },
+    {
+      "id": "36199ab9-4a7a-4123-a58b-cfe9be1d504b",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-07-16",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 2.5,
+      "groupId": "34dec1ed-bda4-4345-a147-94ee246126cd",
+      "photos": []
+    },
+    {
+      "id": "f5359e85-bec9-467a-b104-c6face7cb7b4",
+      "friendId": "0fe53116-eb89-487e-8925-049596b594d3",
+      "date": "2026-07-16",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dungeons and Dragons",
+      "hours": 2.5,
+      "groupId": "34dec1ed-bda4-4345-a147-94ee246126cd",
+      "photos": []
+    },
+    {
+      "id": "8979cf7c-032b-474c-b34a-7788049566d0",
+      "friendId": "b8b24f24-88ae-424b-b27f-9bb64d733203",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound",
+      "hours": 3.5,
+      "groupId": "31290bf1-b702-445f-bc41-2aa0521d99fe",
+      "photos": []
+    },
+    {
+      "id": "a7e52907-0289-4ff6-91c0-c2ee7892fbcd",
+      "friendId": "e6b9ec66-9339-4194-8e23-001d99ff40f0",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound",
+      "hours": 3.5,
+      "groupId": "31290bf1-b702-445f-bc41-2aa0521d99fe",
+      "photos": []
+    },
+    {
+      "id": "f244dcc3-fda8-48cd-9a8f-58be77d15971",
+      "friendId": "eaa0ea33-9bcd-47c4-a0d0-5327cc6906ae",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Riftbound",
+      "hours": 3.5,
+      "groupId": "31290bf1-b702-445f-bc41-2aa0521d99fe",
+      "photos": []
+    },
+    {
+      "id": "324c9e8d-c9a0-49a2-a009-57da129ccf77",
+      "friendId": "4303d34e-bc33-4590-a94f-7edd8642f96f",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Suit Shopping",
+      "hours": 2.5,
+      "groupId": "aebc0194-a83e-40a3-b2e7-685cfb3f19c7",
+      "photos": []
+    },
+    {
+      "id": "cc69e667-d0c4-4366-b0dc-f49bd6695802",
+      "friendId": "442599c5-75e1-4167-a233-0f00527588d1",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Suit Shopping",
+      "hours": 2.5,
+      "groupId": "aebc0194-a83e-40a3-b2e7-685cfb3f19c7",
+      "photos": []
+    },
+    {
+      "id": "f0cec2e6-5d19-429e-be0f-465f816e9c53",
+      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Suit Shopping",
+      "hours": 2.5,
+      "groupId": "aebc0194-a83e-40a3-b2e7-685cfb3f19c7",
+      "photos": []
+    },
+    {
+      "id": "116dbd95-1849-42b2-88b8-2fe46aeee12f",
+      "friendId": "b3b94f97-72a9-46c0-9442-f4f67be5ec96",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Suit Shopping",
+      "hours": 2.5,
+      "groupId": "aebc0194-a83e-40a3-b2e7-685cfb3f19c7",
+      "photos": []
+    },
+    {
+      "id": "38947234-a127-4614-8cb5-6732a08f8c4f",
+      "friendId": "3eff8d9f-4978-4d4f-adb7-d2db8aa67fd5",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Suit Shopping",
+      "hours": 2.5,
+      "groupId": "aebc0194-a83e-40a3-b2e7-685cfb3f19c7",
+      "photos": []
+    },
+    {
+      "id": "a38af7b6-9de5-44ae-8d3e-4e5730f962c2",
+      "friendId": "4303d34e-bc33-4590-a94f-7edd8642f96f",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Yapping\nDomino's",
+      "hours": 3,
+      "groupId": "9d0901a5-16fa-40b1-b176-37505cdcc39f",
+      "photos": []
+    },
+    {
+      "id": "ad11f088-1422-43dd-bd71-708ccc0e19bb",
+      "friendId": "3eff8d9f-4978-4d4f-adb7-d2db8aa67fd5",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Yapping\nDomino's",
+      "hours": 3,
+      "groupId": "9d0901a5-16fa-40b1-b176-37505cdcc39f",
+      "photos": []
+    },
+    {
+      "id": "602e5272-ffe3-4240-aaa8-92f6ea7b4c5c",
+      "friendId": "834fa4aa-05cd-489c-95f3-922cfa43c81b",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Yapping\nDomino's",
+      "hours": 3,
+      "groupId": "9d0901a5-16fa-40b1-b176-37505cdcc39f",
+      "photos": []
+    },
+    {
+      "id": "1141e800-fd80-42c8-a644-453cd3f1345d",
+      "friendId": "b9bf7180-0bb6-4c8b-9b27-5c540ac89889",
+      "date": "2026-07-18",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Yapping\nDomino's",
+      "hours": 3,
+      "groupId": "9d0901a5-16fa-40b1-b176-37505cdcc39f",
+      "photos": []
+    },
+    {
+      "id": "62da1ef3-90b9-479a-8e07-67db614364da",
+      "friendId": "e6b9ec66-9339-4194-8e23-001d99ff40f0",
+      "date": "2026-07-20",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Yapping\nThai Thyme",
+      "hours": 3,
+      "groupId": null,
+      "photos": []
+    },
+    {
+      "id": "9ef3bf48-2571-457e-9bdb-8d640d6f62a1",
+      "friendId": "22f9703a-98fd-4220-9cae-b288273d7155",
+      "date": "2026-07-22",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "b8304ca3-987f-4e6f-8502-bcec103a7eeb",
+      "photos": []
+    },
+    {
+      "id": "592b8f46-45c4-4016-88a7-5a98e95244da",
+      "friendId": "870aef86-ba99-46c1-a865-d5a6205d308c",
+      "date": "2026-07-22",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "b8304ca3-987f-4e6f-8502-bcec103a7eeb",
+      "photos": []
+    },
+    {
+      "id": "caf859ab-aea3-41a3-98a6-a624052b1eb4",
+      "friendId": "0fe53116-eb89-487e-8925-049596b594d3",
+      "date": "2026-07-22",
+      "categoryId": "5af08b68-9e1c-452e-a85e-dd852f9a23f5",
+      "notes": "Dungeons and Dragons",
+      "hours": 3,
+      "groupId": "b8304ca3-987f-4e6f-8502-bcec103a7eeb",
+      "photos": []
+    },
+    {
+      "id": "bb8cd065-6a9f-4c67-a7e1-2589502248f0",
+      "friendId": "9e6b429a-91b3-43a8-9d0a-f5420275a7cc",
+      "date": "2026-07-23",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 1,
+      "groupId": "166daf15-5bdb-43ef-ae69-c75e4f470d83",
+      "photos": []
+    },
+    {
+      "id": "940ce55f-07bb-469c-859e-7e1f28a9caba",
+      "friendId": "2239d3fe-a558-4d0d-9c55-ea1dc7a389e9",
+      "date": "2026-07-23",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 1,
+      "groupId": "166daf15-5bdb-43ef-ae69-c75e4f470d83",
+      "photos": []
+    },
+    {
+      "id": "d5425f20-ba7a-4de0-91e9-4d6597da75da",
+      "friendId": "d9e8d885-4f58-49e1-99a7-b795fd6facc6",
+      "date": "2026-07-23",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 1,
+      "groupId": "166daf15-5bdb-43ef-ae69-c75e4f470d83",
+      "photos": []
+    },
+    {
+      "id": "d4a2c048-e17b-49f8-8256-26e9fe8ea33b",
+      "friendId": "7aad59e5-5591-40c5-9e46-cebf65457d30",
+      "date": "2026-07-24",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day\nBirthday Celebration\nFia Restaurant",
+      "hours": 7,
+      "groupId": "15e980d4-e0df-4431-af3c-311afbbde686",
+      "photos": []
+    },
+    {
+      "id": "f8bc437b-4181-4a65-a21a-bbff346d7052",
+      "friendId": "eb0ba367-ef61-4e57-b64d-b2341f7dba2f",
+      "date": "2026-07-24",
+      "categoryId": "947eec51-a4bb-42ed-ab57-3bb1811ff650",
+      "notes": "Riot Day\nBirthday Celebration\nFia Restaurant",
+      "hours": 7,
+      "groupId": "15e980d4-e0df-4431-af3c-311afbbde686",
+      "photos": []
+    },
+    {
+      "id": "4f47b9e5-7d69-48a3-b3df-7c95a2c1b4e0",
+      "friendId": "2239d3fe-a558-4d0d-9c55-ea1dc7a389e9",
+      "date": "2026-07-25",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Board Games\nLunch\nDinner",
+      "hours": 8,
+      "groupId": "19b670fe-20e4-4309-a7f0-6717c4a18d27",
+      "photos": []
+    },
+    {
+      "id": "af7f6636-4890-4cc4-8eb3-52eccb455fd2",
+      "friendId": "9e6b429a-91b3-43a8-9d0a-f5420275a7cc",
+      "date": "2026-07-25",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Board Games\nLunch\nDinner",
+      "hours": 8,
+      "groupId": "19b670fe-20e4-4309-a7f0-6717c4a18d27",
+      "photos": []
+    },
+    {
+      "id": "7be09496-d8c1-4a38-afc7-aed51b646130",
+      "friendId": "d9e8d885-4f58-49e1-99a7-b795fd6facc6",
+      "date": "2026-07-25",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Board Games\nLunch\nDinner",
+      "hours": 8,
+      "groupId": "19b670fe-20e4-4309-a7f0-6717c4a18d27",
+      "photos": []
+    },
+    {
+      "id": "c1f6e13c-0eba-4fea-b1e5-2b14cb6d5050",
+      "friendId": "2239d3fe-a558-4d0d-9c55-ea1dc7a389e9",
+      "date": "2026-07-28",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 3,
+      "groupId": "71227810-f999-4daf-a34b-da58f2133618",
+      "photos": []
+    },
+    {
+      "id": "65a3a5cd-ee8e-4e52-8ca2-61ca96aeb321",
+      "friendId": "9e6b429a-91b3-43a8-9d0a-f5420275a7cc",
+      "date": "2026-07-28",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Dinner",
+      "hours": 3,
+      "groupId": "71227810-f999-4daf-a34b-da58f2133618",
+      "photos": []
+    },
+    {
+      "id": "5f9f9247-ba38-43af-be08-817a524128bc",
+      "friendId": "3ae0c93c-b260-4c76-96e5-39ab7ba51f22",
+      "date": "2026-07-31",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Yapping",
+      "hours": 1,
+      "groupId": "4a5016aa-3b96-4ca3-8b64-4824432bba7c",
+      "photos": []
+    },
+    {
+      "id": "69b45f90-f2c6-43d4-8f64-98dab8326a7e",
+      "friendId": "4141f6f9-659e-4922-97eb-55ae34d242de",
+      "date": "2026-07-31",
+      "categoryId": "6a37c83b-472a-4ff2-a4f2-f231016a0c39",
+      "notes": "Yapping",
+      "hours": 1,
+      "groupId": "4a5016aa-3b96-4ca3-8b64-4824432bba7c",
       "photos": []
     }
   ],
@@ -2243,15 +3283,6 @@
       "createdAt": "2026-06-24T02:24:57.920Z"
     },
     {
-      "id": "bb05f199-e573-4253-bb8e-c4ad2729b2cd",
-      "name": "Kyle Lam",
-      "groupIds": [
-        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
-        "12fd57b0-e578-4138-a356-160cfb346845"
-      ],
-      "createdAt": "2026-06-24T02:25:05.664Z"
-    },
-    {
       "id": "d5d1595d-58d6-4948-9a08-ba4b60facf17",
       "name": "Ryan Tran",
       "groupIds": [
@@ -2267,6 +3298,56 @@
         "12fd57b0-e578-4138-a356-160cfb346845"
       ],
       "createdAt": "2026-06-24T02:28:45.215Z"
+    },
+    {
+      "id": "ef29ce8d-a06b-4eca-868d-79ce581b1d96",
+      "name": "Brandon Bui",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "12fd57b0-e578-4138-a356-160cfb346845"
+      ],
+      "createdAt": "2026-06-24T02:30:09.930Z"
+    },
+    {
+      "id": "f9cb4c5b-d53c-4e4c-92ed-a5bdc8481b76",
+      "name": "Joyce Lam",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "daf6492c-6aed-4e46-a5fa-be454131692f"
+      ],
+      "createdAt": "2026-08-05T06:32:43.634Z"
+    },
+    {
+      "id": "3d7aa835-69a9-4e17-9bdb-d514e7965a8f",
+      "name": "Destiny Estacio",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9",
+        "12fd57b0-e578-4138-a356-160cfb346845"
+      ],
+      "createdAt": "2026-08-05T06:39:02.397Z"
+    },
+    {
+      "id": "84e6c3b6-8d51-448a-ae79-d98cdcf87c1d",
+      "name": "Britney Duong",
+      "groupIds": [
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9"
+      ],
+      "createdAt": "2026-08-05T06:40:12.299Z"
+    },
+    {
+      "id": "a35aae3b-35c7-497d-b811-8333b792db30",
+      "name": "Amy Duong",
+      "groupIds": [],
+      "createdAt": "2026-08-05T06:40:17.395Z"
+    },
+    {
+      "id": "1f93cbbc-ffbe-4cc5-a5f1-3acc9556d7bb",
+      "name": "Matthew Padilla",
+      "groupIds": [
+        "785966be-efe2-40f1-afb0-7b32cbb32aa6",
+        "cf594396-d862-40cf-a3f1-1108ad9ca0a9"
+      ],
+      "createdAt": "2026-08-05T06:41:42.048Z"
     }
   ],
   "categories": [
@@ -2357,5 +3438,5 @@
     }
   ],
   "darkMode": true,
-  "savedAt": "2026-06-24T02:29:16.469Z"
+  "savedAt": "2026-08-05T06:52:51.572Z"
 }
