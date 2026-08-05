@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   LayoutDashboard, 
   PlusCircle, 
@@ -12,7 +12,9 @@ import {
   X,
   Moon,
   Sun,
-  BarChart3
+  BarChart3,
+  Save,
+  AlertCircle
 } from 'lucide-react';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import Dashboard from './components/Dashboard';
@@ -26,6 +28,8 @@ import CSVImport from './components/CSVImport';
 import CSVExport from './components/CSVExport';
 import Insights from './components/Insights';
 import { cn } from './utils/cn';
+import { isSupabaseConfigured } from './lib/supabase';
+import * as db from './lib/db';
 
 const NAV_ITEMS = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -40,123 +44,150 @@ const NAV_ITEMS = [
   { id: 'export', label: 'Export CSV', icon: Download },
 ];
 
-const isElectron = typeof window !== 'undefined' && window.electronAPI?.isElectron;
-
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(isElectron);
-  
-  const [hangouts, setHangouts] = useLocalStorage('ftt-hangouts', []);
-  const [friends, setFriends] = useLocalStorage('ftt-friends', []);
-  const [categories, setCategories] = useLocalStorage('ftt-categories', []);
-  const [groups, setGroups] = useLocalStorage('ftt-groups', []);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState('');
+
+  const [hangouts, setHangouts] = useState([]);
+  const [friends, setFriends] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [groups, setGroups] = useState([]);
   const [darkMode, setDarkMode] = useLocalStorage('ftt-dark-mode', true);
 
-  // Load data from Electron on startup
+  // Load all data from Supabase on startup (single source of truth)
   useEffect(() => {
-    async function loadElectronData() {
-      if (isElectron) {
-        try {
-          const data = await window.electronAPI.loadData();
-          if (data) {
-            if (data.hangouts) setHangouts(data.hangouts);
-            if (data.friends) setFriends(data.friends);
-            if (data.categories) setCategories(data.categories);
-            if (data.groups) setGroups(data.groups);
-            if (data.darkMode !== undefined) setDarkMode(data.darkMode);
-          }
-        } catch (err) {
-          console.error('Failed to load Electron data:', err);
-        }
+    async function load() {
+      if (!isSupabaseConfigured) {
+        setLoadError(
+          'Supabase is not configured. Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to your .env file, then restart the dev server.'
+        );
         setIsLoading(false);
+        return;
       }
-    }
-    loadElectronData();
-  }, []);
-
-  // Save to Electron whenever data changes
-  const saveToElectron = useCallback(async (newHangouts, newFriends, newCategories, newGroups, newDarkMode) => {
-    if (isElectron) {
       try {
-        await window.electronAPI.saveData({
-          hangouts: newHangouts,
-          friends: newFriends,
-          categories: newCategories,
-          groups: newGroups,
-          darkMode: newDarkMode,
-          savedAt: new Date().toISOString()
-        });
+        const data = await db.loadAll();
+        setHangouts(data.hangouts);
+        setFriends(data.friends);
+        setCategories(data.categories);
+        setGroups(data.groups);
       } catch (err) {
-        console.error('Failed to save to Electron:', err);
+        console.error('Failed to load data from Supabase:', err);
+        setLoadError(err.message || 'Failed to load data from Supabase.');
       }
+      setIsLoading(false);
     }
+    load();
   }, []);
 
-  // Save to Electron after state changes
-  useEffect(() => {
-    if (!isLoading) {
-      saveToElectron(hangouts, friends, categories, groups, darkMode);
+  // On a failed write, surface the error and re-sync local state from Supabase.
+  const reportError = async (err) => {
+    console.error('Supabase write failed:', err);
+    alert('Failed to save changes to Supabase: ' + (err?.message || err));
+    try {
+      const data = await db.loadAll();
+      setHangouts(data.hangouts);
+      setFriends(data.friends);
+      setCategories(data.categories);
+      setGroups(data.groups);
+    } catch (e) {
+      console.error('Failed to re-sync after error:', e);
     }
-  }, [hangouts, friends, categories, groups, darkMode, isLoading, saveToElectron]);
+  };
 
-  const handleAddHangout = (hangout) => {
+  const handleAddHangout = async (hangout) => {
     setHangouts(prev => [...prev, hangout]);
+    try { await db.addHangout(hangout); } catch (err) { reportError(err); }
   };
 
-  const handleUpdateHangout = (updated) => {
+  const handleUpdateHangout = async (updated) => {
     setHangouts(prev => prev.map(h => h.id === updated.id ? updated : h));
+    try { await db.updateHangout(updated); } catch (err) { reportError(err); }
   };
 
-  const handleDeleteHangout = (id) => {
+  const handleDeleteHangout = async (id) => {
     setHangouts(prev => prev.filter(h => h.id !== id));
+    try { await db.deleteHangout(id); } catch (err) { reportError(err); }
   };
 
-  const handleAddFriend = (friend) => {
-    setFriends([...friends, friend]);
+  const handleAddFriend = async (friend) => {
+    setFriends(prev => [...prev, friend]);
+    try { await db.addFriend(friend); } catch (err) { reportError(err); }
   };
 
-  const handleUpdateFriend = (updated) => {
-    setFriends(friends.map(f => f.id === updated.id ? updated : f));
+  const handleUpdateFriend = async (updated) => {
+    setFriends(prev => prev.map(f => f.id === updated.id ? updated : f));
+    try { await db.updateFriend(updated); } catch (err) { reportError(err); }
   };
 
-  const handleDeleteFriend = (id) => {
-    setFriends(friends.filter(f => f.id !== id));
-    setHangouts(hangouts.filter(h => h.friendId !== id));
+  const handleDeleteFriend = async (id) => {
+    setFriends(prev => prev.filter(f => f.id !== id));
+    setHangouts(prev => prev.filter(h => h.friendId !== id));
+    try { await db.deleteFriend(id); } catch (err) { reportError(err); }
   };
 
-  const handleAddCategory = (category) => {
-    setCategories([...categories, category]);
+  const handleAddCategory = async (category) => {
+    setCategories(prev => [...prev, category]);
+    try { await db.addCategory(category); } catch (err) { reportError(err); }
   };
 
-  const handleUpdateCategory = (updated) => {
-    setCategories(categories.map(c => c.id === updated.id ? updated : c));
+  const handleUpdateCategory = async (updated) => {
+    setCategories(prev => prev.map(c => c.id === updated.id ? updated : c));
+    try { await db.updateCategory(updated); } catch (err) { reportError(err); }
   };
 
-  const handleDeleteCategory = (id) => {
-    setCategories(categories.filter(c => c.id !== id));
+  const handleDeleteCategory = async (id) => {
+    setCategories(prev => prev.filter(c => c.id !== id));
+    try { await db.deleteCategory(id); } catch (err) { reportError(err); }
   };
 
-  const handleAddGroup = (group) => {
-    setGroups([...groups, group]);
+  const handleAddGroup = async (group) => {
+    setGroups(prev => [...prev, group]);
+    try { await db.addGroup(group); } catch (err) { reportError(err); }
   };
 
-  const handleUpdateGroup = (updated) => {
-    setGroups(groups.map(g => g.id === updated.id ? updated : g));
+  const handleUpdateGroup = async (updated) => {
+    setGroups(prev => prev.map(g => g.id === updated.id ? updated : g));
+    try { await db.updateGroup(updated); } catch (err) { reportError(err); }
   };
 
-  const handleDeleteGroup = (id) => {
-    setGroups(groups.filter(g => g.id !== id));
-    // Remove group from all friends
-    setFriends(friends.map(f => ({
+  const handleDeleteGroup = async (id) => {
+    // Friends that need their group_ids updated in the DB
+    const affected = friends
+      .filter(f => (f.groupIds || []).includes(id))
+      .map(f => ({ ...f, groupIds: (f.groupIds || []).filter(gId => gId !== id) }));
+    setGroups(prev => prev.filter(g => g.id !== id));
+    setFriends(prev => prev.map(f => ({
       ...f,
       groupIds: (f.groupIds || []).filter(gId => gId !== id)
     })));
+    try {
+      await db.deleteGroup(id);
+      await db.updateFriendsBulk(affected);
+    } catch (err) { reportError(err); }
   };
 
-  const handleImportHangouts = (imported) => {
-    setHangouts([...hangouts, ...imported]);
+  const handleImportHangouts = async (imported) => {
+    setHangouts(prev => [...prev, ...imported]);
     setActiveTab('list');
+    try { await db.addHangouts(imported); } catch (err) { reportError(err); }
+  };
+
+  // Manual safety-net backup: download current data as JSON.
+  const handleExportBackup = () => {
+    const payload = {
+      hangouts, friends, categories, groups, darkMode,
+      savedAt: new Date().toISOString(),
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const ts = new Date().toISOString().replace(/[:.]/g, '-');
+    a.href = url;
+    a.download = `friend-time-tracker-backup-${ts}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
   };
 
   const renderContent = () => {
@@ -249,13 +280,26 @@ function App() {
     }
   };
 
-  // Show loading screen while Electron loads data
+  // Show loading screen while data loads from Supabase
   if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-900 flex items-center justify-center">
         <div className="text-center">
           <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
           <p className="text-gray-400">Loading your data...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Surface configuration / connection errors instead of a blank app
+  if (loadError) {
+    return (
+      <div className="min-h-screen bg-gray-900 flex items-center justify-center p-6">
+        <div className="max-w-md text-center">
+          <AlertCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
+          <h2 className="text-xl font-bold text-white mb-2">Couldn't load your data</h2>
+          <p className="text-gray-400 text-sm whitespace-pre-line">{loadError}</p>
         </div>
       </div>
     );
@@ -358,6 +402,17 @@ function App() {
                 />
               </button>
             </div>
+            <button
+              onClick={handleExportBackup}
+              className={cn(
+                'mt-3 w-full flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors',
+                darkMode ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-600 hover:bg-gray-100'
+              )}
+              title="Download a JSON backup of your current data"
+            >
+              <Save className="w-4 h-4" />
+              Export Backup
+            </button>
           </div>
         </aside>
 
