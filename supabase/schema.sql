@@ -17,9 +17,17 @@ create table if not exists public.categories (
 );
 
 create table if not exists public.groups (
-  id   uuid primary key,
-  name text not null
+  id            uuid primary key,
+  name          text not null,
+  color         text,
+  cadence_days  integer,
+  exception_ids jsonb not null default '[]'::jsonb
 );
+
+-- Backfill columns for databases created before these fields existed.
+alter table public.groups add column if not exists color         text;
+alter table public.groups add column if not exists cadence_days  integer;
+alter table public.groups add column if not exists exception_ids jsonb not null default '[]'::jsonb;
 
 create table if not exists public.hangouts (
   id          uuid primary key,

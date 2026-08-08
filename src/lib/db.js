@@ -7,8 +7,20 @@ const toFriend = (f) => ({ id: f.id, name: f.name, group_ids: f.groupIds ?? [] }
 const fromCategory = (r) => ({ id: r.id, name: r.name, color: r.color });
 const toCategory = (c) => ({ id: c.id, name: c.name, color: c.color });
 
-const fromGroup = (r) => ({ id: r.id, name: r.name });
-const toGroup = (g) => ({ id: g.id, name: g.name });
+const fromGroup = (r) => ({
+  id: r.id,
+  name: r.name,
+  color: r.color,
+  cadenceDays: r.cadence_days ?? null,
+  exceptionIds: r.exception_ids ?? [],
+});
+const toGroup = (g) => ({
+  id: g.id,
+  name: g.name,
+  color: g.color ?? null,
+  cadence_days: g.cadenceDays ?? null,
+  exception_ids: g.exceptionIds ?? [],
+});
 
 const fromHangout = (r) => ({
   id: r.id,

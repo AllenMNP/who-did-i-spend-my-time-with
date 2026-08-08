@@ -63,9 +63,12 @@ function main() {
   lines.push('-- groups');
   for (const g of groups) {
     lines.push(
-      `insert into public.groups (id, name) values (${q(g.id)}, ${q(
-        g.name
-      )}) on conflict (id) do update set name = excluded.name;`
+      `insert into public.groups (id, name, color, cadence_days, exception_ids) values (` +
+        `${q(g.id)}, ${q(g.name)}, ${q(g.color)}, ${
+          g.cadenceDays === null || g.cadenceDays === undefined ? 'null' : Number(g.cadenceDays)
+        }, ${jsonb(g.exceptionIds)}) ` +
+        `on conflict (id) do update set name = excluded.name, color = excluded.color, ` +
+        `cadence_days = excluded.cadence_days, exception_ids = excluded.exception_ids;`
     );
   }
   lines.push('');
